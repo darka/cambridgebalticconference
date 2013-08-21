@@ -412,38 +412,37 @@ html {
 	font-size: 2em;
 }	
 
-#menu, .subpage h1 {
+#menu {
 	background-color: #009145;
 	color: #ffffff;
-	margin: 0;
-}
-
-#menu {
 	position: relative;
 	top: -5em;
-	margin: 0 auto -2.5em auto;
-	overflow: auto;
+	margin-bottom: -3.5em;
 }
 
 #menu ul {
 	list-style-type: none;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
-	width: 100%;
 	text-align: center;
+	width: 100%;
+	overflow: auto;
 }
 
 #menu ul li {
 	float: left;
 }
 
+#menu ul li:last-child {
+	float: right;
+}
+
 #menu ul li a {
-	padding: 0.5em 0;
+	display: block;
+	padding: 1em 0.75em;
 	text-decoration: none;
 	background-color: #009145;
 	color: #ffffff;
-	display: block;
-	width: 11em;
 }
 
 #menu ul li a:hover {
@@ -451,6 +450,9 @@ html {
 }
 
 .subpage h1 {
+	background-color: #009145;
+	color: #ffffff;
+	margin: 0;
 	clear: both;
 	padding: 10px 70px;
 }
