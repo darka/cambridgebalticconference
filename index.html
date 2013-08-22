@@ -44,13 +44,13 @@
 	</div>
 	<div id="menu">
 		<ul>
-			<li><a href="#about-conference">About Conference</a></li>
-			<li><a href="#speakers">Speakers</a></li>
-			<li><a href="#workshops">Workshops</a></li>
-			<li><a href="#programme">Programme</a></li>
-			<li><a href="#venues">Venues</a></li>
-			<li><a href="#about-societies">About Baltic Societies</a></li>
-			<li><a href="#sponsors-partners">Sponsors &amp; Partners</a></li>
+			<li><a class="scroller" href="#about-conference">About Conference</a></li>
+			<li><a class="scroller" href="#speakers">Speakers</a></li>
+			<li><a class="scroller" href="#workshops">Workshops</a></li>
+			<li><a class="scroller" href="#programme">Programme</a></li>
+			<li><a class="scroller" href="#venues">Venues</a></li>
+			<li><a class="scroller" href="#about-societies">About Baltic Societies</a></li>
+			<li><a class="scroller" href="#sponsors-partners">Sponsors &amp; Partners</a></li>
 			<li class="register"><a href="#">Registration</a></li>
 		</ul>
 	</div>
@@ -113,5 +113,17 @@
 		<a name="sponsors-partners"></a>
 		<h1>Sponsors &amp; Partners</h1>
 	</div>
+	<script>
+		var $root = $('html, body');
+		$('a.scroller').click(function() {
+			var href = '[name="' + $.attr(this, 'href').substr(1) + '"]';
+			$root.animate({
+				scrollTop: $(href).offset().top
+			}, 500, function () {
+				window.location.hash = href;
+			});
+			return false;
+		});
+	</script>
 </body>
 </html>
