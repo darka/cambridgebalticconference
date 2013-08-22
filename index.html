@@ -97,7 +97,7 @@
 		<h1>Venue</h1>
 		<div id="union"></div>
 		<h2 class="centered">The Cambridge Union Society, 9a Bridge Street, Cambridge, CB2 1UB</h2>
-		<div class="centered"><iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;aq=&amp;sll=52.208586,0.119082&amp;sspn=0.007508,0.018582&amp;t=m&amp;g=CB2+1UB,+United+Kingdom&amp;ie=UTF8&amp;hq=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;ll=52.206555,0.118918&amp;spn=0.009205,0.034332&amp;z=15&amp;output=embed"></iframe></div>
+		<div class="centered"><iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;aq=&amp;sll=52.208586,0.119082&amp;sspn=0.007508,0.018582&amp;t=m&amp;g=CB2+1UB,+United+Kingdom&amp;ie=UTF8&amp;hq=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;cid=6742687063114734851&amp;hnear=&amp;ll=52.210079,0.120506&amp;spn=0.031557,0.068579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe></div>
 	</div>
 	<div class="subpage">
 		<a name="about-societies"></a>
@@ -118,8 +118,9 @@
 		$('a.scroller').click(function() {
 			var href_real = $.attr(this, 'href')
 			var href = '[name="' + href_real.substr(1) + '"]';
+			var scrollto = $(href).offset().top;
 			$root.animate({
-				scrollTop: $(href).offset().top
+				scrollTop: scrollto
 			}, 500, function () {
 				window.location.hash = href_real;
 			});
