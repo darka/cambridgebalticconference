@@ -474,6 +474,24 @@ html {
 	text-align: justify;
 }
 
+#kings {
+	width: 100%;
+	height: 70vh;
+	background-image: url('images/kings-mq.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#union {
+	width: 100%;
+	height: 50vh;
+	background-image: url('images/union-mq.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .schedule {
 	list-style-type: none;
 }
