@@ -116,11 +116,12 @@
 	<script>
 		var $root = $('html, body');
 		$('a.scroller').click(function() {
-			var href = '[name="' + $.attr(this, 'href').substr(1) + '"]';
+			var href_real = $.attr(this, 'href')
+			var href = '[name="' + href_real.substr(1) + '"]';
 			$root.animate({
 				scrollTop: $(href).offset().top
 			}, 500, function () {
-				window.location.hash = href;
+				window.location.hash = href_real;
 			});
 			return false;
 		});
