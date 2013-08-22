@@ -378,9 +378,10 @@ html {
 	max-height: 775px;
 	color: #ffffff;
 	overflow: auto;
-	background-image: url('images/tmp-back.jpg');
+	background-image: url('images/background-mq.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #logodate {
