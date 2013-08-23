@@ -543,3 +543,15 @@ html {
 	margin: 0;
 	padding: 0;
 }
+
+.soclogo {
+	width: 15%;
+	height: auto;
+	margin: 1em 2em;
+	vertical-align: middle;
+}
+
+.latvians {
+	width: 10%;
+	height: auto;
+}
