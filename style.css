@@ -511,3 +511,35 @@ html {
 .centered {
 	text-align: center;
 }
+
+#speakercontainer {
+	display: table;
+	text-align: center;
+}
+
+.speakerrow {
+	display: table-row;
+}
+
+.speaker {
+	width: 30%;
+	display: table-cell;
+	padding: 1em;
+}
+
+.speaker img {
+	width: 100%;
+	height: auto;
+}
+
+.speaker h3 {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	color: #009145;
+}
+
+.speaker ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
