@@ -196,14 +196,19 @@
 	</div>
 	<script>
 		var $root = $('html, body');
+		var menuHeight = $('#menu').height();
 		$('a.scroller').click(function() {
 			var href_real = $.attr(this, 'href')
 			var href = '[name="' + href_real.substr(1) + '"]';
-			var scrollto = $(href).offset().top;
+			var scrollto = $(href).offset().top - menuHeight;
 			$root.animate({
 				scrollTop: scrollto
 			}, 500, function () {
-				window.location.hash = href_real;
+				if(history.pushState) {
+					history.pushState({}, '', href_real);
+				} else {
+					window.location.hash = href_real;
+				}
 			});
 			return false;
 		});
