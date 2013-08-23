@@ -566,3 +566,36 @@ html {
 .googlemap {
 	margin-bottom: 2em;
 }
+
+#registration {
+	position: fixed;
+	display: none;
+	top: 2em;
+	left: 10%;
+	width: 80%;
+	padding: 1em;
+	z-index: 101;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	background-color: #ffffff;
+	text-align: center;
+}
+
+#overlay {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+#registration .reglink, #registration .reglink:visited {
+	color: #009145;
+}

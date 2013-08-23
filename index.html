@@ -35,6 +35,7 @@
 	</script>
 </head>
 <body>
+	<div id="overlay"></div>
 	<div id="header">
 		<div id="logodate">
 			<span>12th October 2013</span>
@@ -51,8 +52,12 @@
 			<li><a class="scroller" href="#venues">Venues</a></li>
 			<li><a class="scroller" href="#about-societies">About Baltic Societies</a></li>
 			<li><a class="scroller" href="#sponsors-partners">Sponsors &amp; Partners</a></li>
-			<li class="register"><a href="#">Registration</a></li>
+			<li class="register"><a class="reglink" href="#">Registration</a></li>
 		</ul>
+	</div>
+	<div id="registration" class="hidden">
+		<a class="reglink" href="#">Close</a>
+		<h1>Registration for the event will be opened soon, please check back later</h1>
 	</div>
 	<div class="subpage">
 		<a name="about-conference"></a>
@@ -195,12 +200,11 @@
 		</div>
 	</div>
 	<script>
-		$(function() {
-			$('img').each(function() {
-				var o = $(this);
-				if(!o.attr('title') && o.attr('alt')) o.attr('title', o.attr('alt'));
-			});
+		$('img').each(function() {
+			var o = $(this);
+			if(!o.attr('title') && o.attr('alt')) o.attr('title', o.attr('alt'));
 		});
+
 		var $root = $('html, body');
 		var menuHeight = $('#menu').height();
 		$('a.scroller').click(function() {
@@ -216,6 +220,11 @@
 					window.location.hash = href_real;
 				}
 			});
+			return false;
+		});
+
+		$('.reglink').click(function() {
+			$('#registration,#overlay').fadeToggle(500);
 			return false;
 		});
 	</script>
