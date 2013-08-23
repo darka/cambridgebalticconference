@@ -179,22 +179,28 @@
 		are three active student organisations that currently have over a hundred full-time students and a fast growing numbers of alumni from the Baltic States in one of the most prestigious universities in the world. The members of the societies are working towards undergraduate and postgraduate degrees in various disciplines. Together we build a friendly environment to share ideas and experience.</p>
 		<p>Although we are relatively new, CULS, CUEST and CULA have already proven that they are solid societies with a clear vision and long term goals. Our initiatives, versatility, ambitions and maturity are exemplified by our numerous successful past and present projects, which include Lithuanian Ideas Forum 2011, student mentorship project Academic Brother, Lithuanian Students Forum, interactive conference LINK2012, guest lectures by Prof Leonidas Donskis, Prof Ene Ergma, Prof Mart Ustav and Dr Vidmantas Tomkus and classical music concerts by Algirdas Galdikas, Maksim Stsura and Rimantas Vingras. These events attracted hundreds of international people and were well highlighted in the media.</p>
 		<div class="centered">
-			<img class="soclogo" src="images/logo-culs.jpg">
-			<img class="soclogo latvians" src="images/logo-cula.jpg">
-			<img class="soclogo" src="images/logo-cuest.jpg">
+			<a href="http://www.cu-ls.org/"><img class="soclogo" src="images/logo-culs.jpg" alt="Cambridge University Lithuanian Society"></a>
+			<img class="soclogo latvians" src="images/logo-cula.jpg" alt="Cambridge University Latvian Association">
+			<a href="http://cuest.soc.srcf.net/"><img class="soclogo" src="images/logo-cuest.jpg" alt="Cambridge University Estonian Society"></a>
 		</div>
 	</div>
 	<div class="subpage">
 		<a name="sponsors-partners"></a>
 		<h1>Sponsors &amp; Partners</h1>
 		<div class="centered">
-			<img class="sponsorlogo" src="images/logo-urm.png">
-			<img class="sponsorlogo" src="images/logo-gll.jpg">
-			<img class="sponsorlogo" src="images/logo-lclc.jpg">
-			<img class="sponsorlogo" src="images/logo-bowtie.jpg">
+			<a href="http://www.urm.lt/"><img class="sponsorlogo" src="images/logo-urm.png" alt="Ministry of Foreign Affairs of the Republic of Lithuania"></a>
+			<a href="http://www.lithuanianleaders.org/"><img class="sponsorlogo" src="images/logo-gll.jpg" alt="Global Lithuanian Leaders"></a>
+			<a href="http://www.litcityclub.co.uk/"><img class="sponsorlogo" src="images/logo-lclc.jpg" alt="Lithuanian City of London Club"></a>
+			<a href="http://www.bowtie-interior.com/"><img class="sponsorlogo" src="images/logo-bowtie.jpg" alt="Bow Tie Creative Interior Design"></a>
 		</div>
 	</div>
 	<script>
+		$(function() {
+			$('img').each(function() {
+				var o = $(this);
+				if(!o.attr('title') && o.attr('alt')) o.attr('title', o.attr('alt'));
+			});
+		});
 		var $root = $('html, body');
 		var menuHeight = $('#menu').height();
 		$('a.scroller').click(function() {
