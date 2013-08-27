@@ -474,6 +474,11 @@ html {
 	text-align: justify;
 }
 
+.subpage ul {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
 #kings {
 	width: 100%;
 	height: 70vh;
