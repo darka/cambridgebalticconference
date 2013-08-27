@@ -445,7 +445,8 @@ html {
 }
 
 #menu ul li a:hover {
-	background-color: #004d24;
+	color: #009145;
+	background-color: #ffffff;
 }
 
 #menu ul li.register {
@@ -461,6 +462,9 @@ html {
 	background-position: center left;
 }
 
+#menu ul li.register a:hover {
+	background-image: url('images/register-inv.png');
+}
 
 .subpage h1 {
 	background-color: #009145;
