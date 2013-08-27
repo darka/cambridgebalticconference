@@ -522,6 +522,7 @@ html {
 #speakercontainer {
 	display: table;
 	text-align: center;
+	border-spacing: 2em;
 }
 
 .speakerrow {
@@ -531,7 +532,6 @@ html {
 .speaker {
 	width: 30%;
 	display: table-cell;
-	padding: 1em;
 }
 
 .speaker img {
