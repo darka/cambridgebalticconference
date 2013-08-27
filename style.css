@@ -471,18 +471,22 @@ html {
 	color: #ffffff;
 	margin: 0;
 	clear: both;
-	padding: 10px 70px;
+	padding: 10px 10%;
 }
 
 .subpage p {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 9.8%;
+	margin-right: 9.8%;
 	text-align: justify;
 }
 
+.subpage p+p {
+	margin-top: 1.5em;
+}
+
 .subpage ul {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 9.8%;
+	margin-right: 9.8%;
 }
 
 #fulllogo {
