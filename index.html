@@ -62,8 +62,7 @@
 		<h1>Registration for the event will be opened soon, please check back later</h1>
 	</div>
 	<div class="subpage">
-		<a name="about"></a>
-		<h1>Cambridge Baltic Conference</h1>
+		<h1 id="about">Cambridge Baltic Conference</h1>
 		<div id="fulllogo"></div>
 		<p>Just two decades ago the Baltic States reappeared on the map of Europe. Only nine years ago they joined the EU. Now these countries are beginning to lead and inspire the other members with their young enthusiasm, innovative decisions, creative approach to economy, education and culture.</p>
 		<p>On the 12th of October Cambridge Baltic Conference will bring leaders in science, politics and business from Baltic States together with high-flying students and young professionals to discuss the united common history, present matters and future aspirations. The challenges overcome and lessons learnt from recent political, social and economic transitions will surely be of interest and high value not only for the Baltic States but for the whole European Union community as well.</p>
@@ -71,8 +70,7 @@
 		<p>Whether you are from the Baltics, interested in the Baltics, or just want to learn about the success story of the region, you are very welcome to join us.</p>
 	</div>
 	<div class="subpage">
-		<a name="speakers"></a>
-		<h1>Speakers</h1>
+		<h1 id="speakers">Speakers</h1>
 		<div id="speakercontainer">
 			<div class="speakerrow">
 				<div class="speaker">
@@ -144,8 +142,7 @@
 		</div>
 	</div>
 	<div class="subpage">
-		<a name="workshops"></a>
-		<h1>Workshops</h1>
+		<h1 id="workshops">Workshops</h1>
 		<p>There will be a total of four different workshops on the following topics run in parallel:</p>
 		<ul>
 			<li>Academia and Higher Education</li>
@@ -156,8 +153,7 @@
 		<p>We will provide further information about each of them very soon to help you to choose which one you would like to attend on the day. Please check back later.</p>
 	</div>
 	<div class="subpage">
-		<a name="programme"></a>
-		<h1>Programme</h1>
+		<h1 id="programme">Programme</h1>
 		<div id="kings"></div>
 		<ul class="schedule">
 			<li><span>11:00 - 12:00</span>Excursion around Cambridge for early arrivals</li>
@@ -178,15 +174,13 @@
 		</ul>
 	</div>
 	<div class="subpage">
-		<a name="venues"></a>
-		<h1>Venue</h1>
+		<h1 id="venues">Venues</h1>
 		<div id="union"></div>
 		<h2 class="centered">The Cambridge Union Society, 9a Bridge Street, Cambridge, CB2 1UB</h2>
 		<div class="centered"><iframe class="googlemap" width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;aq=&amp;sll=52.208586,0.119082&amp;sspn=0.007508,0.018582&amp;t=m&amp;g=CB2+1UB,+United+Kingdom&amp;ie=UTF8&amp;hq=The+Cambridge+Union+Society,+9a+Bridge+Street,+Cambridge,+CB2+1UB&amp;cid=6742687063114734851&amp;hnear=&amp;ll=52.210079,0.120506&amp;spn=0.031557,0.068579&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe></div>
 	</div>
 	<div class="subpage">
-		<a name="about-societies"></a>
-		<h1>About the Baltic Societies</h1>
+		<h1 id="about-societies">About the Baltic Societies</h1>
 		<p>Cambridge University Baltic societies:<br>
 		CULS - Cambridge University Lithuanian Society (established in 2008),<br>
 		CUEST - Cambridge University Estonian Society (2011) and<br>
@@ -200,8 +194,7 @@
 		</div>
 	</div>
 	<div class="subpage">
-		<a name="sponsors-partners"></a>
-		<h1>Sponsors &amp; Partners</h1>
+		<h1 id="sponsors-partners">Sponsors &amp; Partners</h1>
 		<div class="centered">
 			<a href="http://www.urm.lt/"><img class="sponsorlogo" src="images/logo-urm.png" alt="Ministry of Foreign Affairs of the Republic of Lithuania"></a>
 			<a href="http://www.lithuanianleaders.org/"><img class="sponsorlogo" src="images/logo-gll.jpg" alt="Global Lithuanian Leaders"></a>
@@ -218,16 +211,15 @@
 		var $root = $('html, body');
 		var menuHeight = $('#menu').height();
 		$('a.scroller').click(function() {
-			var href_real = $.attr(this, 'href')
-			var href = '[name="' + href_real.substr(1) + '"]';
+			var href = $.attr(this, 'href')
 			var scrollto = $(href).offset().top - menuHeight;
 			$root.animate({
 				scrollTop: scrollto
 			}, 500, function () {
 				if(history.pushState) {
-					history.pushState({}, '', href_real);
+					history.pushState({}, '', href);
 				} else {
-					window.location.hash = href_real;
+					window.location.hash = href;
 				}
 			});
 			return false;
