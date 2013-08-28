@@ -587,6 +587,10 @@ html {
 	vertical-align: middle;
 }
 
+.embassies {
+	width: 15%;
+}
+
 .googlemap {
 	margin-bottom: 2em;
 }
