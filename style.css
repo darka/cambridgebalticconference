@@ -524,13 +524,14 @@ html {
 	background-size: cover;
 }
 
-.schedule {
+ul.schedule {
 	list-style-type: none;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .schedule li {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 0.7em;
 }
 
 .schedule li span {
