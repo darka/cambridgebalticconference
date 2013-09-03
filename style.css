@@ -489,6 +489,14 @@ html {
 	margin-right: 9.8%;
 }
 
+.subpage > p:first-of-type {
+	margin-top: 2em;
+}
+
+.subpage > p:last-of-type {
+	margin-bottom: 2em;
+}
+
 #fulllogo {
 	margin: 1em auto;
 	height: 30vh;
@@ -564,8 +572,18 @@ html {
 
 .speaker ul {
 	list-style-type: none;
-	margin: 0;
+	margin: 0 15%;
 	padding: 0;
+	text-align: left;
+}
+
+.speaker ul li {
+	text-indent: -0.7em;
+}
+
+.speaker ul li:before {
+	content: "• ";
+	color: #009145;
 }
 
 .soclogo {
@@ -581,9 +599,9 @@ html {
 }
 
 .sponsorlogo {
-	width: 12%;
+	width: 10%;
 	height: auto;
-	margin: 3em 2em;
+	margin: 3%;
 	vertical-align: middle;
 }
 
