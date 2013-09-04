@@ -619,6 +619,19 @@ ul.schedule {
 	margin-bottom: 2em;
 }
 
+.workshoplist {
+	text-align: justify;
+}
+
+.workshoplist span {
+	display: block;
+	font-weight: bold;
+}
+
+.workshoplist li+li {
+	padding-top: 1em;
+}
+
 #registration {
 	position: fixed;
 	display: none;
