@@ -610,6 +610,11 @@ ul.schedule {
 	width: 15%;
 }
 
+.widerlogo {
+	width: 25%;
+	margin: 2% 1%;
+}
+
 .googlemap {
 	margin-bottom: 2em;
 }
