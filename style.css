@@ -611,6 +611,10 @@ ul.schedule {
 }
 
 .widerlogo {
+	width: 20%;
+}
+
+.widestlogo {
 	width: 25%;
 	margin: 2% 1%;
 }
