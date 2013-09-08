@@ -551,7 +551,7 @@ ul.schedule {
 	text-align: center;
 }
 
-#speakercontainer {
+.speakercontainer {
 	display: table;
 	text-align: center;
 	border-spacing: 2em;
