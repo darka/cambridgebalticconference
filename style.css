@@ -671,6 +671,9 @@ ul.schedule {
 	background-color: rgba(0, 0, 0, 0.9);
 }
 
-#registration .reglink, #registration .reglink:visited {
+#registration .reglink,
+#registration .reglink:visited,
+.subpage a,
+.subpage a:visited {
 	color: #009145;
 }
