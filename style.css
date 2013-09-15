@@ -552,11 +552,16 @@ ul.schedule {
 	padding-bottom: 0.7em;
 }
 
-.schedule li span {
+.schedule li span:first-of-type {
 	color: #009145;
 	font-weight: bold;
 	font-size: 125%;
 	margin-right: 1em;
+}
+
+.schedule .talktitle {
+	font-weight: bold;
+	font-style: italic;
 }
 
 .centered {
