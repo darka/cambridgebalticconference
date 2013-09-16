@@ -703,6 +703,7 @@ ul.schedule {
 	width: 80%;
 	padding: 1em;
 	z-index: 101;
+	min-height: 300px;
 
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -710,6 +711,11 @@ ul.schedule {
 
 	background-color: #ffffff;
 	text-align: center;
+}
+
+#registration a.reglink {
+	display: block;
+	margin-bottom: 1em;
 }
 
 #overlay {
