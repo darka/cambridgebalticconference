@@ -583,6 +583,10 @@ ul.schedule {
 	margin-bottom: 2em;
 }
 
+.schedule small {
+	font-style: italic;
+}
+
 .schedule sup {
 	z-index: -1;
 }
@@ -605,10 +609,10 @@ ul.schedule {
 
 .schedsection {
 	display: block;
-	text-align: right;
+	//text-align: right;
 	width: 100%;
 
-	font-size: 0.8em;
+	font-size: 0.9em;
 	margin: 0;
 	padding: 0;
 }
