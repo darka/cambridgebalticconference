@@ -599,6 +599,20 @@ ul.schedule {
 	font-style: italic;
 }
 
+.schedsection {
+	display: block;
+	text-align: right;
+	width: 100%;
+
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+.schedule hr {
+	margin: 0 0 0.5em 0;
+}
+
 .centered {
 	text-align: center;
 }
@@ -689,6 +703,7 @@ ul.schedule {
 .workshoplist span {
 	display: block;
 	font-weight: bold;
+	margin-bottom: 0.5em;
 }
 
 .workshoplist li+li {
