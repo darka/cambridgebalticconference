@@ -517,11 +517,46 @@ html {
 
 #union {
 	width: 100%;
-	height: 50vh;
+	height: 30vh;
 	background-image: url('images/union-mq.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#hall {
+	width: 100%;
+	height: 30vh;
+	background-image: url('images/dinner-mq.jpg');
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#venuecontainer {
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.venue {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+
+.venue h3, .venue h2 {
+	margin: 0.3em 0;
+	padding: 0;
+}
+
+.googlemap {
+	width: 90%;
+	height: 50vh;
+	margin-bottom: 2em;
 }
 
 #footer {
@@ -645,10 +680,6 @@ ul.schedule {
 .widestlogo {
 	width: 25%;
 	margin: 2% 1%;
-}
-
-.googlemap {
-	margin-bottom: 2em;
 }
 
 .workshoplist {
