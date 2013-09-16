@@ -697,3 +697,14 @@ a,
 a:visited {
 	color: #009145;
 }
+
+.soclist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.soclist li {
+	margin: 0;
+	padding: 0;
+}
