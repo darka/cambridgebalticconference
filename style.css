@@ -691,6 +691,10 @@ ul.schedule {
 	vertical-align: middle;
 }
 
+.narrowerlogo {
+	width: 7%;
+}
+
 .widelogo {
 	width: 15%;
 }
