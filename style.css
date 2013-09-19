@@ -772,3 +772,18 @@ a:visited {
 	margin: 0;
 	padding: 0;
 }
+
+.subpage h2 {
+	margin: 0;
+	padding: 0 15%;
+}
+
+#committeelist {
+	margin: 1em 15%;
+	padding: 0;
+	list-style-type: none;
+}
+
+#committeelist li {
+	padding-top: 0.75em;
+}
