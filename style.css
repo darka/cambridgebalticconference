@@ -787,3 +787,8 @@ a:visited {
 #committeelist li {
 	padding-top: 0.75em;
 }
+
+h3.regnotice {
+	margin: 1em 0;
+	padding: 0 9.8%;
+}
