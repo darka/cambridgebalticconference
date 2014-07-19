@@ -7,34 +7,8 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-		// based on http://www.backslash.gr/content/blog/webdevelopment/6-navigation-menu-that-stays-on-top-with-jquery
-		$(function() {
-			// grab the initial top offset of the navigation
-			var sticky_navigation_offset_top = $('#menu').offset().top;
-
-			// our function that decides whether the navigation bar should have "fixed" css position or not
-			var sticky_navigation = function(){
-				var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-
-				// if we've scrolled more than the navigation, change its position to fixed to stick to top,
-				// otherwise change it back to relative
-				if (scroll_top > sticky_navigation_offset_top) {
-					$('#menu').css({'position': 'fixed', 'top':0, 'left':0, 'bottom':'auto' });
-				} else {
-					$('#menu').css({'position': 'absolute', 'top':'auto', 'left':'auto', 'bottom':'5%'});
-				}
-			};
-
-			// run our function on load
-			sticky_navigation();
-
-			// and run it again every time you scroll
-			$(window).scroll(function() {
-				sticky_navigation();
-			});
-		});
-	</script>
+	<script src="static/stickynav.js"></script>
+    <script>sticky_nav_init('#menu');</script>
 </head>
 <body>
 	<div id="pagetop">
