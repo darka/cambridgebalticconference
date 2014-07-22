@@ -1,3 +1,4 @@
 ve
 out/*
 *.py[co]
+*.swp
