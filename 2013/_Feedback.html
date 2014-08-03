@@ -1,0 +1,22 @@
+{% extends "common/_subpage.tmpl.html" %}
+
+{% block subpage_id %}feedback{% endblock %}
+{% block subpage_title %}Feedback{% endblock %}
+
+{% block subpage_content %}
+    <div class="margins">
+        <script type="text/javascript">
+            var fblp_url = 'http://www.feedbackloop.com.au';
+            var fblp_code = 'CBC2013';
+            var fblp_service = 'CambridgeBalticConference2013';
+            (function() {
+                var fblp = document.createElement('script');
+                fblp.type = 'text/javascript'; fblp.async = true;
+                fblp.src = fblp_url + '/stat/widget/embed.js';
+                document.getElementsByTagName('head')[0].appendChild(fblp);
+            })();
+        </script>
+        <div id="fblp_main"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://www.feedbackloop.com.au/?utm_source=feedbacklp&utm_medium=widget_CBC2013&utm_campaign=noscript" target="_blank">social testimonials powered by Feedback Loop.</a></noscript>
+    </div>
+{% endblock %}

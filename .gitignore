@@ -1,4 +1,6 @@
 ve
-out/*
+cbc2013
+cbc2014
+dist
 *.py[co]
 *.swp

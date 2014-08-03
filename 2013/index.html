@@ -1,0 +1,35 @@
+{% extends "common/_base.tmpl.html" %}
+
+{% set nav = [
+    ("#about", "About"),
+    ("#speakers", "Speakers"),
+    ("#workshops", "Workshops"),
+    ("#patrons", "Patrons"),
+    ("#sponsors-partners", "Sponsors &amp; Partners"),
+    ("#feedback", "Feedback"),
+    ("#programme", "Programme"),
+    ("#venues", "Venues"),
+    ("#organisers", "Organisers"),
+    ("https://www.dropbox.com/sh/e82dmh16l0qs675/N7kb-mtmKM#lh:null-CBC%2001.jpg", "Photos"),
+] %}
+
+{% block header %}
+    <div id="logodate">
+        <span>12th October 2013</span>
+    </div>
+    <div id="title">Cambridge Baltic Conference</div>
+    <div id="subtitle">New Challenges and New Insights for and from the Baltic States</div>
+{% endblock %}
+
+{% block body %}
+    {% include "_Summary.html" %}
+    {% include "_About.html" %}
+    {% include "_Speakers.html" %}
+    {% include "_Workshops.html" %}
+    {% include "_Patrons.html" %}
+    {% include "_SponsorsPartners.html" %}
+    {% include "_Feedback.html" %}
+    {% include "_Programme.html" %}
+    {% include "_Venues.html" %}
+    {% include "_Organisers.html" %}
+{% endblock %}
