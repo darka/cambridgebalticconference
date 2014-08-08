@@ -1,12 +1,12 @@
-{% extends "common/_base.tmpl.html" %}
+{% extends "common/_year_base.tmpl.html" %}
 
 {% set nav = [
+    ("#feedback", "Feedback"),
     ("#about", "About"),
     ("#speakers", "Speakers"),
     ("#workshops", "Workshops"),
     ("#patrons", "Patrons"),
     ("#sponsors-partners", "Sponsors &amp; Partners"),
-    ("#feedback", "Feedback"),
     ("#programme", "Programme"),
     ("#venues", "Venues"),
     ("#organisers", "Organisers"),
@@ -22,13 +22,13 @@
 {% endblock %}
 
 {% block body %}
+    {% include "_Feedback.html" %}
     {% include "_Summary.html" %}
-    {% include "_About.html" %}
+    {#    {% include "_About.html" %}#}
     {% include "_Speakers.html" %}
     {% include "_Workshops.html" %}
     {% include "_Patrons.html" %}
     {% include "_SponsorsPartners.html" %}
-    {% include "_Feedback.html" %}
     {% include "_Programme.html" %}
     {% include "_Venues.html" %}
     {% include "_Organisers.html" %}
