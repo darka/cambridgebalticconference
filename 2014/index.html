@@ -13,6 +13,13 @@
 {% set nav = [
     ("#about", "About"),
     ("#cbc2013", "Photos"),
+    ("#programme", "Programme"),
+    ("#venues", "Venues"),
+    ("#speakers", "Speakers"),
+    ("#patrons", "Patrons"),
+    ("#sponsors", "Sponsors"),
+    ("#partners", "Partners &amp; Supporters"),
+    ("#organisers", "Organisers"),
 ] %}
 
 {% block header %}
@@ -26,4 +33,11 @@
 {% block body %}
     {% include "_About.html" %}
     {% include "_Cbc2013.html" %}
+    {% include "_Programme.html" %}
+    {% include "_Venues.html" %}
+    {% include "_Speakers.html" %}
+    {% include "_Patrons.html" %}
+    {% include "_Sponsors.html" %}
+    {% include "_Partners.html" %}
+    {% include "_Organisers.html" %}
 {% endblock %}
