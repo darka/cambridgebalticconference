@@ -1,16 +1,20 @@
-.PHONY: all cbc2013 cbc2014 deploy
+.PHONY: all cbc2013 cbc2014 root deploy
 
-all: cbc2013 cbc2014
-	cp -rT cbc2014 cbcdev
-	cp -rT cbc2013 cbcdev/2013
-	cp root_static/* cbcdev/
-	cp root_static/.htaccess cbcdev/
+all: cbc2013 cbc2014 root
+	cp -rT out/root out/cbcdev
+	cp -rT out/2014 out/cbcdev/2014
+	cp -rT out/2013 out/cbcdev/2013
+	cp root_static/* out/cbcdev/
+	cp root_static/.htaccess out/cbcdev/
+
+root:
+	staticjinja build --srcpath=root/ --outpath=out/root/ --static=static
 
 cbc2013:
-	staticjinja build --srcpath=2013/ --outpath=cbc2013/ --static=static
+	staticjinja build --srcpath=2013/ --outpath=out/2013/ --static=static
 
 cbc2014:
-	staticjinja build --srcpath=2014/ --outpath=cbc2014/ --static=static
+	staticjinja build --srcpath=2014/ --outpath=out/2014/ --static=static
 
 deploy: all
-	scp -r cbcdev/ emerald.antanas.org:~/
+	scp -r out/cbcdev/ emerald.antanas.org:~/
