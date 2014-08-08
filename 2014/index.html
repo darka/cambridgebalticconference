@@ -1,7 +1,18 @@
-{% extends "common/_base.tmpl.html" %}
+{% extends "common/_year_base.tmpl.html" %}
+
+{% block head %}
+    {{ super() }}
+    <script src="static/easySlider1.7.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#photoslider").easySlider();
+        });
+    </script>
+{% endblock %}
 
 {% set nav = [
-    ("2013", "CBC 2013"),
+    ("#about", "About"),
+    ("#cbc2013", "Photos"),
 ] %}
 
 {% block header %}
@@ -13,4 +24,6 @@
 {% endblock %}
 
 {% block body %}
+    {% include "_About.html" %}
+    {% include "_Cbc2013.html" %}
 {% endblock %}
