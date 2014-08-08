@@ -6,60 +6,16 @@
     <meta charset="utf-8">
     <meta property="og:image" content="http://cambridgebalticconference.eu/static/images/full-logo.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/normalize.css">
     <link rel="stylesheet" type="text/css" href="static/style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     {% if nav %}
     <script src="static/stickynav.js"></script>
     {% endif %}
 {% endblock %}
 </head>
 <body>
-    <div id="pagetop">
-        <div id="header">
-        {% block header %}
-        {% endblock %}
-        </div>
-        {% if nav %}
-        <div id="menu">
-            <ul>
-                {% for item in nav %}
-                <li><a {% if item[0][0] == '#' %}class="scroller"{% endif %} href="{{ item[0] }}">{{ item[1] }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
-    </div>
-    {% block body %}
-    {% endblock %}
-    <div id="footer">
-        {% block footer %}
-        <h1 id="contact">Contact us: <a href="mailto:CambridgeBalticConference@gmail.com">CambridgeBalticConference@gmail.com</a></h1>
-        {% endblock %}
-    </div>
-    <script>
-    {% block bodyscript %}
-        $('img').each(function() {
-            var o = $(this);
-            if(!o.attr('title') && o.attr('alt')) o.attr('title', o.attr('alt'));
-        });
-
-        var $root = $('html, body');
-        var menuHeight = $('#menu').height();
-        $('a.scroller').click(function() {
-            var href = $.attr(this, 'href')
-            var scrollto = $(href).offset().top - menuHeight;
-            $root.animate({
-                scrollTop: scrollto
-            }, 500, function () {
-                if(history.pushState) {
-                    history.pushState({}, '', href);
-                } else {
-                    window.location.hash = href;
-                }
-            });
-            return false;
-        });
-    {% endblock %}
-    </script>
+{% block allbody %}
+{% endblock %}
 </body>
 </html>
