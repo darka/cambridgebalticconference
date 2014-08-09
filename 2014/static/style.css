@@ -111,6 +111,11 @@ body {
     padding: 10px 10%;
 }
 
+.subpage h1 a,
+.subpage h1 a:visited {
+    color: #ffffff;
+}
+
 .subpage p {
     margin-left: 9.8%;
     margin-right: 9.8%;
@@ -450,7 +455,7 @@ p.about_subtitle {
 }
 
 #slidercontainer {
-    margin: 0;
+    margin: 2em 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
@@ -484,6 +489,14 @@ p.about_subtitle {
 }
 
 #slidercontrols a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+#slidercontrols a:hover {
+    color: #4C74B7;
 }
 
 #prevBtn {
