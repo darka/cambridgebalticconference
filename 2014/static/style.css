@@ -267,10 +267,6 @@ ul.schedule {
     margin: 0 0 0.5em 0;
 }
 
-.centered {
-    text-align: center;
-}
-
 .speakercontainer {
     display: table;
     text-align: center;
@@ -457,6 +453,14 @@ p.about_subtitle {
 
 .blue {
     color: #4C74B7;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
 }
 
 #slidercontainer {
