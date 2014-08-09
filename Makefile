@@ -17,4 +17,4 @@ cbc2014:
 	staticjinja build --srcpath=2014/ --outpath=out/2014/ --static=static
 
 deploy: all
-	scp -r out/cbcdev/ emerald.antanas.org:~/
+	rsync -av out/cbcdev/ emerald.antanas.org:/home/uranium/cbcdev
