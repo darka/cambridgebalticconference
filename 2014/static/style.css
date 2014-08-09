@@ -250,7 +250,7 @@ ul.schedule {
 .schedday {
     display: block;
 
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 1em 0 0.5em 0;
 }
 
@@ -494,13 +494,13 @@ p.about_subtitle {
 }
 
 #slidercontrols {
-    margin: 0 25%;
+    margin: -0.5em 25% 0 25%;
 }
 
 #slidercontrols a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #000000;
 }
 
