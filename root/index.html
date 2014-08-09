@@ -1,7 +1,32 @@
 {% extends "common/_base.tmpl.html" %}
 
+{% block head %}
+    {{ super() }}
+    <style>
+        img {
+            width: 40vw;
+            height: auto;
+        }
+
+        a {
+            position: fixed;
+            top: calc(50% - 20vw);
+        }
+
+        #l-2013 {
+            left: 7.5vw;
+        }
+
+        #l-2014 {
+            right: 7.5vw;
+        }
+    </style>
+{% endblock %}
+
 {% block allbody %}
-    <a href="2013/">2013</a>
-    <a href="2014/">2014</a>
+    <div id="yearlinks">
+        <a id="l-2013" href="2013/"><img src="static/2013.png" alt="CBC 2013"></a>
+        <a id="l-2014" href="2014/"><img src="static/2014.png" alt="CBC 2014"></a>
+    </div>
 {% endblock %}
 
