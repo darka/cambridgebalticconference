@@ -4,6 +4,10 @@ html {
     color: #000000;
 }
 
+body {
+    overflow-y: scroll;
+}
+
 #header {
     width: 100%;
     height: 100vh;
@@ -443,4 +447,49 @@ p.about_subtitle {
 
 .blue {
     color: #4C74B7;
+}
+
+#slidercontainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider {
+    margin: 0 25%;
+}
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#slider li {
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+}
+
+#slider img {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 50vw;
+}
+
+#slidercontrols {
+    margin: 0 25%;
+}
+
+#slidercontrols a {
+}
+
+#prevBtn {
+    float: left;
+}
+
+#nextBtn {
+    float: right;
 }

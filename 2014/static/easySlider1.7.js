@@ -34,12 +34,12 @@
 		// default configuration properties
 		var defaults = {			
 			prevId: 		'prevBtn',
-			prevText: 		'Previous',
+			prevText: 		'<<',
 			nextId: 		'nextBtn',	
-			nextText: 		'Next',
+			nextText: 		'>>',
 			controlsShow:	true,
-			controlsBefore:	'',
-			controlsAfter:	'',	
+			controlsBefore:	'<div id="slidercontrols">',
+			controlsAfter:	'</div>',
 			controlsFade:	true,
 			firstId: 		'firstBtn',
 			firstText: 		'First',
@@ -51,7 +51,7 @@
 			speed: 			800,
 			auto:			false,
 			pause:			2000,
-			continuous:		false, 
+			continuous:		true,
 			numeric: 		false,
 			numericId: 		'controls'
 		}; 
