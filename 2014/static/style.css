@@ -417,11 +417,11 @@ a:visited {
 
 .subpage h2 {
     margin: 0;
-    padding: 0 15%;
+    padding: 0 9.8%;
 }
 
 #committeelist {
-    margin: 1em 15%;
+    margin: 1em 9.8%;
     padding: 0;
     list-style-type: none;
 }
