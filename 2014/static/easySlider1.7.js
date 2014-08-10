@@ -49,7 +49,7 @@
 			lastShow:		false,				
 			vertical:		false,
 			speed: 			800,
-			auto:			false,
+			auto:			true,
 			pause:			2000,
 			continuous:		true,
 			numeric: 		false,
