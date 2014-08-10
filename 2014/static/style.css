@@ -25,10 +25,10 @@ body {
     margin: 2em 3.5vw 0 0;
     background-image: url('images/top-logo.png');
     background-position: top right;
-    background-size: auto 7.8vw;
+    background-size: auto 6.5vw;
     background-repeat: no-repeat;
     height: 4em;
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: right;
 
 }
@@ -41,12 +41,12 @@ body {
 
 #title {
     text-align: center;
-    font-size: 7vw;
+    font-size: 6vw;
 }
 
 #subtitle {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #pagetop {
@@ -442,6 +442,11 @@ h3.regnotice {
 p.notice {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+p.sponsornotice {
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 p.about_subtitle {
