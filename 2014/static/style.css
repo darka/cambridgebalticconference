@@ -152,7 +152,7 @@ body {
     width: 100%;
     height: 70vh;
     background-image: url('images/kings-mq.jpg');
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
