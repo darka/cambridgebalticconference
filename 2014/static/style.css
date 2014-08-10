@@ -459,7 +459,8 @@ p.about_subtitle {
     font-weight: bold;
 }
 
-.centered {
+.centered,
+.subpage p.centered {
     text-align: center;
 }
 
