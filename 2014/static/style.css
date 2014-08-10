@@ -471,7 +471,7 @@ p.about_subtitle {
 }
 
 #slider {
-    margin: 0 25%;
+    margin: 0 25vw;
 }
 
 #slider ul {
@@ -494,7 +494,7 @@ p.about_subtitle {
 }
 
 #slidercontrols {
-    margin: -0.5em 25% 0 25%;
+    margin: -0.5em 25vw 0 25vw;
 }
 
 #slidercontrols a {
@@ -514,4 +514,9 @@ p.about_subtitle {
 
 #nextBtn {
     float: right;
+}
+
+.video {
+    margin: 2em 9.8% 0 9.8%;
+    text-align: center;
 }
