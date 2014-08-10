@@ -7,15 +7,11 @@
     <div id="slidercontainer">
         <div id="slider">
             <ul>
+                {% for i in range(1, 66) %}
                 <li>
-                    <img src="static/photos/1.jpg">
+                    <img src="static/photos/CBC-{{ i }}.jpg">
                 </li>
-                <li>
-                    <img src="static/photos/2.jpg">
-                </li>
-                <li>
-                    <img src="static/photos/3.jpg">
-                </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
