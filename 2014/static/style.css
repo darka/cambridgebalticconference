@@ -59,6 +59,7 @@ body {
     position: absolute;
     bottom: 5%;
     width: 100%;
+    z-index: 1000;
 }
 
 #menu ul {
@@ -470,55 +471,27 @@ p.about_subtitle {
 }
 
 #slidercontainer {
-    margin: 2em 0;
+    margin: 2em 25%;
     padding: 0;
-    width: 100%;
     overflow: hidden;
 }
 
-#slider {
-    margin: 0 25vw;
-}
-
-#slider ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#slider li {
-    margin: 0;
-    padding: 0;
-    width: 50vw;
-}
-
-#slider img {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 50vw;
-}
-
-#slidercontrols {
-    margin: -0.5em 25vw 0 25vw;
-}
-
-#slidercontrols a {
-    text-decoration: none;
+span.slidesjs-navigation {
     font-weight: bold;
     font-size: 2em;
     color: #000000;
+    cursor: pointer;
 }
 
-#slidercontrols a:hover {
+span.slidesjs-navigation:hover {
     color: #0076BD;
 }
 
-#prevBtn {
+span.slidesjs-previous {
     float: left;
 }
 
-#nextBtn {
+span.slidesjs-next {
     float: right;
 }
 

@@ -2,12 +2,7 @@
 
 {% block head %}
     {{ super() }}
-    <script src="static/easySlider1.7.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#slider").easySlider();
-        });
-    </script>
+    <script src="static/jquery.slides.min.js"></script>
 {% endblock %}
 
 {% set nav = [
@@ -44,4 +39,17 @@
     {% include "_Sponsors.html" %}
     {% include "_Partners.html" %}
     {% include "_Organisers.html" %}
+{% endblock %}
+
+{% block bodyscript %}
+    {{ super() }}
+    $(function() {
+        $("#slider").slidesjs({
+            width: 1000,
+            height: 665,
+            navigation: { active: false },
+            pagination: { active: false },
+            play: { auto: true }
+        });
+    });
 {% endblock %}
