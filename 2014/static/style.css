@@ -416,11 +416,6 @@ a:visited {
     padding: 0;
 }
 
-.subpage h2 {
-    margin: 0;
-    padding: 0 9.8%;
-}
-
 #committeelist {
     margin: 1em 9.8%;
     padding: 0;
@@ -450,7 +445,7 @@ p.sponsornotice {
     font-size: 1.25em;
 }
 
-p.about_subtitle {
+h2.about_subtitle {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
@@ -496,6 +491,10 @@ span.slidesjs-next {
 }
 
 .video {
-    margin: 2em 9.8% 0 9.8%;
+    margin: 2em 0;
     text-align: center;
+}
+
+#sponsors {
+    margin-bottom: 1em;
 }
