@@ -209,10 +209,19 @@ body {
     color: #ffffff;
 }
 
-#footer h1 {
+#footer #contact {
+    list-style-type: none;
     margin: 0;
     padding: 2em 9.8%;
-    font-size: 1.5em;
+    font-size: 1.0em;
+}
+
+#footer #contact li {
+    margin: 0.3em;
+}
+
+#footer #contact li img {
+    margin: -0.1em 1em;
 }
 
 #footer a,
