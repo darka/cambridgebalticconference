@@ -508,6 +508,10 @@ span.slidesjs-next {
     margin-bottom: 1em;
 }
 
+.maps-container {
+    position: relative;
+}
+
 .maps-overlay {
     position: absolute;
     width: 100%;
