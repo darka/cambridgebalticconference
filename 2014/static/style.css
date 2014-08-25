@@ -507,3 +507,9 @@ span.slidesjs-next {
 #sponsors {
     margin-bottom: 1em;
 }
+
+.maps-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
