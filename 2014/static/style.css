@@ -1,5 +1,5 @@
 html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     background-color: #ffffff;
     color: #000000;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 #menu {
-    background-color: rgba(0,115,207,0.8);
+    background-color: rgba(0,118,189,0.8);
     color: #ffffff;
     position: absolute;
     bottom: 5%;
