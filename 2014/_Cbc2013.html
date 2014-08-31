@@ -15,3 +15,16 @@
     </div>
     <p class="centered bold">More information about last year's event can be found <a href="/2013/">here</a></p>
 {% endblock %}
+
+{% block bodyscript %}
+    {{ super() }}
+    $(function() {
+        $("#slider").slidesjs({
+            width: 1000,
+            height: 665,
+            navigation: { active: false },
+            pagination: { active: false },
+            play: { auto: true }
+        });
+    });
+{% endblock %}

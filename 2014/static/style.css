@@ -229,8 +229,19 @@ body {
     color: #ffffff;
 }
 
+#schedule-container {
+    display: table;
+    border-spacing: 2em;
+}
+
+#workshop-description {
+    display: table-cell;
+}
+
 ul.schedule {
     list-style-type: none;
+    display: table-cell;
+    width: 50%;
 }
 
 .schedule small {
@@ -277,19 +288,22 @@ ul.schedule {
     margin: 0 0 0.5em 0;
 }
 
-.speakercontainer {
-    display: table;
+.speaker-container {
     text-align: center;
     border-spacing: 2em;
+    margin-top: -1em;
 }
 
-.speakerrow {
-    display: table-row;
+#touch-notice {
+    color: dimgray;
+    font-size: 9pt;
 }
 
 .speaker {
-    width: 30%;
-    display: table-cell;
+    width: 23em;
+    display: inline-block;
+    position: relative;
+    margin: 1em;
 }
 
 .speaker img {
@@ -298,9 +312,14 @@ ul.schedule {
 }
 
 .speaker h3 {
-    margin: 0 0 0.5em 0;
+    margin: 0.1em 0;
     padding: 0;
     color: #0076BD;
+}
+
+.speaker-conf-panel {
+    font-size: 9pt;
+    margin-bottom: 0.4em;
 }
 
 .speaker h4 {
@@ -316,12 +335,26 @@ ul.schedule {
 }
 
 .speaker ul li {
-    text-indent: -0.7em;
+    text-indent: -0.3em;
 }
 
 .speaker ul li:before {
     content: "• ";
     color: #0076BD;
+}
+
+.speaker .speaker-info-panel {
+    position: absolute;
+    width: 100%;
+    bottom: 0.2em;
+    padding: 0;
+    max-height: 100%;
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.speaker .speaker-bio {
+    margin-bottom: 0.4em;
+    display: none;
 }
 
 .soclogo {
@@ -502,6 +535,13 @@ span.slidesjs-next {
 .video {
     margin: 2em 0;
     text-align: center;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.vimeo {
+    width: 100%;
 }
 
 #sponsors {

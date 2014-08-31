@@ -9,10 +9,10 @@
     ("#about", "About"),
     ("#cbc2013", "Photos"),
     ("#programme", "Programme"),
-    ("#venues", "Venues"),
     ("#speakers", "Speakers"),
     ("#sponsors", "Sponsors"),
     ("#partners", "Partners &amp; Supporters"),
+    ("#venues", "Venues"),
     ("#organisers", "Organisers"),
     ("#contact", "Contact"),
 ] %}
@@ -43,23 +43,10 @@
     {% include "_About.html" %}
     {% include "_Cbc2013.html" %}
     {% include "_Programme.html" %}
-    {% include "_Venues.html" %}
     {% include "_Speakers.html" %}
     {#    {% include "_Patrons.html" %}#}
     {% include "_Sponsors.html" %}
     {% include "_Partners.html" %}
+    {% include "_Venues.html" %}
     {% include "_Organisers.html" %}
-{% endblock %}
-
-{% block bodyscript %}
-    {{ super() }}
-    $(function() {
-        $("#slider").slidesjs({
-            width: 1000,
-            height: 665,
-            navigation: { active: false },
-            pagination: { active: false },
-            play: { auto: true }
-        });
-    });
 {% endblock %}
