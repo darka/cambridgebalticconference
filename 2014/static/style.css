@@ -127,11 +127,6 @@ body {
     margin-top: 1.5em;
 }
 
-.subpage ul {
-    margin-left: 9.8%;
-    margin-right: 9.8%;
-}
-
 .subpage > p:first-of-type {
     margin-top: 2em;
 }
@@ -231,21 +226,28 @@ body {
 
 #schedule-container {
     display: table;
-    border-spacing: 2em;
+    border-spacing: 0.5em 1em;
+    margin: 1em 3% 0;
 }
 
 .schedule-row {
     display: table-row;
 }
 
-#workshop-description {
+.schedule-description {
     display: table-cell;
+}
+
+.schedule-description p {
+    margin: 0;
+    padding: 0;
 }
 
 ul.schedule {
     list-style-type: none;
     display: table-cell;
-    width: 50%;
+    width: 45%;
+    padding: 0;
 }
 
 .schedule small {
