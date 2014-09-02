@@ -290,7 +290,6 @@ ul.schedule {
 
 .speaker-container {
     text-align: center;
-    margin-top: -1em;
 }
 
 #touch-notice {
@@ -298,11 +297,15 @@ ul.schedule {
     font-size: 9pt;
 }
 
+#speakers-panel {
+    margin: 0 4em;
+}
+
 .speaker {
-    width: 23vw;
+    width: 23em;
     display: inline-block;
     position: relative;
-    margin: 0.5vw;
+    margin: 0.5em;
 }
 
 .speaker img {
@@ -311,14 +314,9 @@ ul.schedule {
 }
 
 .speaker h3 {
-    margin: 0.1em 0;
+    margin: 0.3em 0;
     padding: 0;
     color: #0076BD;
-}
-
-.speaker-conf-panel {
-    font-size: 9pt;
-    margin-bottom: 0.4em;
 }
 
 .speaker h4 {
@@ -343,7 +341,6 @@ ul.schedule {
 }
 
 .speaker .speaker-info-panel {
-    font-size: 1vw;
     position: absolute;
     width: 100%;
     bottom: 0.2em;
