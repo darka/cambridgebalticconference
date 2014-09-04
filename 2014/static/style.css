@@ -127,11 +127,6 @@ body {
     margin-top: 1.5em;
 }
 
-.subpage ul {
-    margin-left: 9.8%;
-    margin-right: 9.8%;
-}
-
 .subpage > p:first-of-type {
     margin-top: 2em;
 }
@@ -231,17 +226,28 @@ body {
 
 #schedule-container {
     display: table;
-    border-spacing: 2em;
+    border-spacing: 0.5em 1em;
+    margin: 1em 3% 0;
 }
 
-#workshop-description {
+.schedule-row {
+    display: table-row;
+}
+
+.schedule-description {
     display: table-cell;
+}
+
+.schedule-description p {
+    margin: 0;
+    padding: 0;
 }
 
 ul.schedule {
     list-style-type: none;
     display: table-cell;
-    width: 50%;
+    width: 45%;
+    padding: 0;
 }
 
 .schedule small {
@@ -272,7 +278,7 @@ ul.schedule {
     display: block;
 
     font-size: 1.5em;
-    margin: 1em 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 .schedsection {
@@ -280,7 +286,6 @@ ul.schedule {
     width: 100%;
 
     font-size: 0.9em;
-    margin: 2em 0 0 0;
     padding: 0;
 }
 
@@ -305,7 +310,7 @@ ul.schedule {
     width: 23em;
     display: inline-block;
     position: relative;
-    margin: 0.5em;
+    margin: 1em;
 }
 
 .speaker img {
