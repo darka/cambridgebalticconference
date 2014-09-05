@@ -308,10 +308,11 @@ ul.schedule {
 
 #speakers-panel {
     margin: 0 3em;
+    text-align: center;
 }
 
 .speaker {
-    width: 17.2em;
+    width: 19em;
     display: inline-block;
     position: relative;
     margin: 0.5em;
