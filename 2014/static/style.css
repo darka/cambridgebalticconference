@@ -296,6 +296,9 @@ ul.schedule {
 .speaker-container {
     text-align: center;
     margin-bottom: 1em;
+    max-width: 70em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #touch-notice {
@@ -304,11 +307,11 @@ ul.schedule {
 }
 
 #speakers-panel {
-    margin: 0 4em;
+    margin: 0 3em;
 }
 
 .speaker {
-    width: 23em;
+    width: 17.2em;
     display: inline-block;
     position: relative;
     margin: 0.5em;
@@ -357,6 +360,7 @@ ul.schedule {
 
 .speaker .speaker-bio {
     margin-bottom: 0.4em;
+    font-size: 10pt;
     display: none;
 }
 
