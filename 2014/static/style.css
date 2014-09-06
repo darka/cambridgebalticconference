@@ -324,7 +324,7 @@ ul.schedule {
 }
 
 .speaker h3 {
-    margin: 0.3em 0;
+    margin: 0.1em 0;
     padding: 0;
     color: #0076BD;
 }
@@ -363,6 +363,11 @@ ul.schedule {
     margin-bottom: 0.4em;
     font-size: 10pt;
     display: none;
+}
+
+.speaker .speaker-conf-panel {
+    font-size: 9pt;
+    margin-bottom: 0.4em;
 }
 
 .soclogo {
