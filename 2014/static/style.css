@@ -226,11 +226,11 @@ body {
 
 #schedule-container {
     display: table;
-    border-spacing: 0.5em 1em;
+    border-spacing: 0.5em 0em;
     margin: 1em 3% 0;
 }
 
-.schedule-row {
+.schedule-row, .schedule-divider {
     display: table-row;
 }
 
@@ -278,18 +278,17 @@ ul.schedule {
     display: block;
 
     font-size: 1.5em;
-    margin: 0 0 0.5em 0;
+    margin: 1em 0 0.5em 0;
 }
 
 .schedsection {
     display: block;
-    width: 100%;
 
     font-size: 0.9em;
-    padding: 0;
+    margin: 1em 0 0 0;
 }
 
-.schedule hr {
+.schedule-divider hr {
     margin: 0 0 0.5em 0;
 }
 
