@@ -8,7 +8,7 @@
         <span id="touch-notice"><p class="centered">Tap on or place your mouse cursor over the speakers to display their biography details.</p></span>
         <div class="schedsection">Skills versus Knowledge in Secondary Education</div>
         <hr>
-        <div class="speaker-container">
+        <div class="speaker-container se-panel">
             <div class="speaker">
                 <img src="static/images/dr-roberts-kilis.jpg">
                 <div class="speaker-info-panel">
@@ -72,9 +72,20 @@
         </div>
         <div class="schedsection">Best Practices in Higher Education</div>
         <hr>
-        <div class="speaker-container">
+        <div class="speaker-container he-panel">
             <div class="speaker">
-                <img src="static/images/secret.jpg">
+                <img src="static/images/ms-maive-rute.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Ms Maive Rute</h3>
+                    <div class="speaker-conf-panel">Keynote speech</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Director at Directorate-General for Science and Innovation at the European Commission</li>
+                            <li>Fellow at the Weatherhead Center at Harvard University (2012-2013)</li>
+                            <li>Director of SME Policy at European Commission (2005-2009)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="speaker">
                 <img src="static/images/prof-marcis-auzins.jpg">
@@ -107,7 +118,7 @@
             <div class="speaker">
                 <img src="static/images/secret.jpg">
             </div>
-             <div class="speaker">
+            <div class="speaker">
                 <img src="static/images/secret.jpg">
             </div>
             <div class="speaker">
@@ -125,7 +136,7 @@
         </div>
         <div class="schedsection">Does Education Foster Entrepreneurship?</div>
         <hr>
-        <div class="speaker-container">
+        <div class="speaker-container be-panel">
             <div class="speaker">
                 <img src="static/images/secret.jpg">
             </div>
@@ -167,7 +178,7 @@
         </div>
         <div class="schedsection">Future Trends and Innovations in the field of Education</div>
         <hr>
-        <div class="speaker-container">
+        <div class="speaker-container fe-panel">
             <div class="speaker">
                 <img src="static/images/secret.jpg">
             </div>
@@ -213,12 +224,14 @@
 
 {% block bodyscript %}
     {{ super() }}
-    $(function() {
-        $("#speakers-panel").hover(function(){
-            $(".speaker-bio").slideToggle();
-            $("#touch-notice").css('visibility', 'hidden');
-        }, function(){
-            $(".speaker-bio").slideToggle();
+    {% for panel_class in ['se-panel', 'he-panel', 'be-panel', 'fe-panel']%}
+        $(function() {
+            $(".speaker-container.{{ panel_class }}").hover(function(){
+                $(".{{ panel_class }} .speaker-bio").slideToggle();
+                $("#touch-notice").css('visibility', 'hidden');
+            }, function(){
+                $(".{{ panel_class }} .speaker-bio").slideToggle();
+            });
         });
-    });
+    {% endfor %}
 {% endblock %}
