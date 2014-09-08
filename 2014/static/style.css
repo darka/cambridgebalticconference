@@ -419,29 +419,6 @@ ul.schedule {
     padding-top: 1em;
 }
 
-#registration {
-    position: fixed;
-    display: none;
-    top: 2em;
-    left: 10%;
-    width: 80%;
-    padding: 1em;
-    z-index: 101;
-    min-height: 300px;
-
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-
-    background-color: #ffffff;
-    text-align: center;
-}
-
-#registration a.reglink {
-    display: block;
-    margin-bottom: 1em;
-}
-
 #overlay {
     position: fixed;
     display: none;
@@ -568,4 +545,8 @@ span.slidesjs-next {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.registration-container {
+    margin: 2em 9.8%;
 }
