@@ -231,7 +231,7 @@ body {
 }
 
 .schedule-row, .schedule-divider {
-    display: table-row;
+    /*display: table-row;*/
 }
 
 .schedule-description {
