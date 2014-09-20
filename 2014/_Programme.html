@@ -9,6 +9,18 @@
         <div class="schedule-divider">
             <span class="schedday">Friday 10th October - Workshops Day<sup>*</sup></span>
         </div>
+        <div id="registration-container">
+            <a id="registration-text">▶ Student registration</a>
+            <div id="registration-spoiler">
+                <p>Please fill in <b>both</b> forms to register:</p>
+                <ul>
+                    <li><a href="https://docs.google.com/forms/d/1RLaQem0uE_A-7DgBLc5UDed0eCL7ipqPII1WJKll5x0/viewform" target="_blank">
+                        CBC 2014 Workshops Day application form (Part 1 of 2)</a>
+                    <li><a href="https://services.google.com/fb/forms/cbc2014/" target="_blank">
+                        Google EMEA Workshops Day application form (Part 2 of 2)</a>
+                </ul>
+            </div>
+        </div>
         <div class="schedule-row">
             <ul class="schedule">
                 <li><span>09:00 - 10:00</span>Registration and Introduction</li>
@@ -30,6 +42,80 @@
                 </p>
             </div>
         </div>
+
+        <div class="speaker-container mentor-panel">
+            {#<div class="speaker">
+                <img src="static/images/mr-linnar-viik.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Linnar Viik</h3>
+                    <div class="speaker-conf-panel">Workshops Day mentor</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Co-owner, Member of the Board, Strategy&amp;Investments at Mobi Solutions</li>
+                            <li>Member of the Council at Research and Development Council of Estonia</li>
+                            <li>Member of the Governing Board at European Institute of Innovation and Technology (2008-2014)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>#}
+            <div class="speaker">
+                <img src="static/images/arnoldas-pranckevicius.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Arnoldas Pranckevičius</h3>
+                    <div class="speaker-conf-panel">Workshops Day mentor</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>External Policies Adviser to the President of the EP</li>
+                            <li>President of the Lithuanian Community in Belgium</li>
+                            <li>Domestic Policy Adviser to the President of Lithuania (2004-2005)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="speaker">
+                <img src="static/images/milda-darguzaite.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Milda Dargužaitė</h3>
+                    <div class="speaker-conf-panel">Workshops Day mentor</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Director General of Invest Lithuania</li>
+                            <li>Adviser to the Lithuanian Minister of Economy (2011-2012)</li>
+                            <li>Vice President at Goldman Sachs (2004-2011)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="static/images/arturas-ratkus.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Artūras Ratkus</h3>
+                    <div class="speaker-conf-panel">Workshops Day mentor</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Research Fellow in Linguistics at University of Vilnius (2013–present)</li>
+                            <li>Senior Rouse Ball stipendiary at Trinity College, Cambridge (2009–2010)</li>
+                            <li>EERB stipendiary at Trinity College, Cambridge (2006–2009)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="static/images/steven-schrage.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Steven Schrage</h3>
+                    <div class="speaker-conf-panel">Workshops Day mentor</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Resident Fellow at Harvard Business School Institute of Politics</li>
+                            <li>Foreign Policy and Trade Director for Mitt Romney</li>
+                            <li>Scholl Chair in International Business at the Center for Strategic and International Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="schedule-divider">
             <span class="schedday">Saturday 11th October - Conference Day</span>
         </div>
@@ -109,4 +195,18 @@
         </div>
     </div>
     
+{% endblock %}
+{% block bodyscript %}
+    {{ super() }}
+    $(function() {
+        $(".speaker-container.mentor-panel").hover(function(){
+            $(".mentor-panel .speaker-bio").slideToggle();
+        }, function(){
+            $(".mentor-panel .speaker-bio").slideToggle();
+        });
+
+        $("#registration-text").click(function() {
+            $("#registration-spoiler").toggle();
+        });
+    });
 {% endblock %}

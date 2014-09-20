@@ -292,6 +292,29 @@ ul.schedule {
     margin: 0 0 0.5em 0;
 }
 
+#registration-container {
+    margin: 1em;
+}
+
+#registration-text {
+
+}
+
+#registration-spoiler {
+    border-left: 0.3em solid #0076BD;
+    display: none;
+}
+
+#registration-spoiler p {
+    margin-left: 2em;
+}
+
+#registration-spoiler ul {
+    list-style-type: none;
+    margin-left: 2em;
+    padding: 0px;
+}
+
 .speaker-container {
     text-align: center;
     margin-bottom: 1em;
@@ -547,6 +570,6 @@ span.slidesjs-next {
     height: 100%;
 }
 
-.registration-container {
+.ticket-container {
     margin: 2em 9.8%;
 }

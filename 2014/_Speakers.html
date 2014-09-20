@@ -6,6 +6,23 @@
 {% block subpage_content %}
     <div id="speakers-panel">
         <span id="touch-notice"><p class="centered">Tap on or place your mouse cursor over the speakers to display their biography details.</p></span>
+        <div class="speaker-container intro-panel">
+            <div class="speaker">
+                <img src="static/images/prof-ian-white.jpg">
+                <div class="speaker-info-panel">
+                    <h3>Prof Ian White</h3>
+                    <div class="speaker-conf-panel">Opening address on behalf of the University</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Deputy Vice Chancellor of the University of Cambridge</li>
+                            <li>Head of the Photonic RG and van Eck Professor at the Engineering Dept of the University of Cambridge</li>
+                            <li>Fellow of the Royal Academy of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
         <div class="schedsection">Skills versus Knowledge in Secondary Education</div>
         <hr>
         <div class="speaker-container se-panel">
@@ -184,9 +201,17 @@
                 </div>
             </div>
             <div class="speaker">
-                <img src="static/images/secret.jpg">
+                <img src="static/images/mr-jonathan-bradford.jpg">
                 <div class="speaker-info-panel">
-                    <h3>To be announced</h3>
+                    <h3>Mr Jonathan Bradford</h3>
+                    <div class="speaker-conf-panel">Panel discussion</div>
+                    <div class="speaker-bio">
+                        <ul>
+                            <li>Managing Director at TechStars</li>
+                            <li>The Insider at Startup Wise Guys</li>
+                            <li>Advisor at startup accelerators</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="speaker">
@@ -289,7 +314,7 @@
 
 {% block bodyscript %}
     {{ super() }}
-    {% for panel_class in ['se-panel', 'he-panel', 'be-panel', 'fe-panel']%}
+    {% for panel_class in ['se-panel', 'he-panel', 'be-panel', 'fe-panel', 'intro-panel']%}
         $(function() {
             $(".speaker-container.{{ panel_class }}").hover(function(){
                 $(".{{ panel_class }} .speaker-bio").slideToggle();
