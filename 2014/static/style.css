@@ -573,3 +573,8 @@ span.slidesjs-next {
 .ticket-container {
     margin: 2em 9.8%;
 }
+
+.patron-container {
+    text-align: center;
+    margin: 2em auto;
+}
