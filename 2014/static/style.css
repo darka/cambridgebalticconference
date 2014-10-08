@@ -297,7 +297,8 @@ ul.schedule {
 }
 
 #registration-text {
-   font-size: 15pt; 
+   font-size: 15pt;
+   cursor: pointer;
 }
 
 #registration-spoiler {

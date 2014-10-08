@@ -23,7 +23,7 @@ deploy: all
 	rsync -av out/cbcdev/ /societies/culs/public_html/cambridgebalticconference.eu
 
 deploy-dev-el: all
-	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/cbcdev
+	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
 
 dirs:
 	mkdir -p out/root/
