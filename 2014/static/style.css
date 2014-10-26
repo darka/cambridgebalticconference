@@ -191,6 +191,10 @@ body {
     padding: 0;
 }
 
+#photos-block {
+    width: 30em;
+}
+
 .googlemap {
     width: 90%;
     height: 50vh;

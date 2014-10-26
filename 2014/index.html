@@ -6,9 +6,9 @@
 {% endblock %}
 
 {% set nav = [
+    ("#feedback", "Feedback"),
+    ("#photos", "Photos"),
     ("#about", "About"),
-    ("#registration", "Registration"),
-    ("#cbc2013", "Photos"),
     ("#programme", "Programme"),
     ("#speakers", "Speakers"),
     ("#patrons", "Patrons"),
@@ -42,9 +42,11 @@
 {% endblock %}
 
 {% block body %}
+    {% include "_Feedback.html" %}
+    {% include "_Photos.html" %}
     {% include "_About.html" %}
-    {% include "_Registration.html" %}
-    {% include "_Cbc2013.html" %}
+    {# {% include "_Registration.html" %} #}
+    {# {% include "_Cbc2013.html" %} #}
     {% include "_Programme.html" %}
     {% include "_Speakers.html" %}
     {% include "_Patrons.html" %}
