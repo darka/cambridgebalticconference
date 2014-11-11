@@ -7,8 +7,12 @@
     <p class="centered bold">Photos from Cambridge Baltic Conference 2014 are available!</p>
     <div class="speaker-container">
         <a href="https://www.dropbox.com/sc/40w2w1k21h324vl/AACWJYiNLqB8XoQj_vg5JeY5a">
-            <div id="photos-block" class="speaker">
-                <img src="static/images/cover.jpg">
+            <div id="photos-speaker" class="speaker">
+                <div id="photos-block"> 
+                    {% for i in range(0, 4) %}
+                    <img src="static/images/cover-{{ i }}.jpg">
+                    {% endfor %}
+                </div>
                 <div class="speaker-info-panel">
                     <h3>CBC 2014 Photos</h3>
                     <div class="speaker-conf-panel">View via Dropbox →</div>
@@ -21,9 +25,9 @@
 {% block bodyscript %}
     {{ super() }}
     $(function() {
-        $("#slider").slidesjs({
-            width: 1000,
-            height: 665,
+        $("#photos-block").slidesjs({
+            width: 700,
+            height: 380,
             navigation: { active: false },
             pagination: { active: false },
             play: { auto: true }

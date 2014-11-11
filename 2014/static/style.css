@@ -191,8 +191,17 @@ body {
     padding: 0;
 }
 
+#photos-speaker {
+    width: 700px;
+}
+
 #photos-block {
-    width: 30em;
+    width: 700px;
+    height: 380px;
+}
+
+.slidesjs-container {
+    z-index: -1;
 }
 
 .googlemap {
