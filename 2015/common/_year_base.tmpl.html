@@ -1,0 +1,56 @@
+{% extends "common/_base.tmpl.html" %}
+
+{% block allbody %}
+    <div id="pagetop">
+        <div id="header">
+        {% block header %}
+        {% endblock %}
+        </div>
+        {% if nav %}
+        <div id="menu">
+            <ul>
+                {% for item in nav %}
+                <li><a {% if item[0][0] == '#' %}class="scroller"{% endif %} href="{{ item[0] }}">{{ item[1] }}</a></li>
+                {% endfor %}
+            </ul>
+            <div id="ribbon">
+                <div id="ribbon-gen">
+                    <span>This is my long text</span>
+                </div>
+                <div id="ribbon-end"></div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% block body %}
+    {% endblock %}
+    <div id="footer">
+        {% block footer %}
+        {% endblock %}
+    </div>
+    <script>
+    {% block bodyscript %}
+        $('img').each(function() {
+            var o = $(this);
+            if(!o.attr('title') && o.attr('alt')) o.attr('title', o.attr('alt'));
+        });
+
+        var $root = $('html, body');
+        var menuHeight = $('#menu').height();
+        $('a.scroller').click(function() {
+            var href = $.attr(this, 'href')
+            var scrollto = $(href).offset().top - menuHeight;
+            $root.animate({
+                scrollTop: scrollto
+            }, 500, function () {
+                if(history.pushState) {
+                    history.pushState({}, '', href);
+                } else {
+                    window.location.hash = href;
+                }
+            });
+            return false;
+        });
+    {% endblock %}
+    </script>
+{% endblock %}

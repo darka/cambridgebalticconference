@@ -191,8 +191,17 @@ body {
     padding: 0;
 }
 
+#photos-speaker {
+    width: 700px;
+}
+
 #photos-block {
-    width: 30em;
+    width: 700px;
+    height: 380px;
+}
+
+.slidesjs-container {
+    z-index: -1;
 }
 
 .googlemap {
@@ -581,4 +590,18 @@ span.slidesjs-next {
 .patron-container {
     text-align: center;
     margin: 2em auto;
+}
+
+.speaker-summary h2 {
+    text-align: left;
+    margin-left: 9.8%;
+    margin-right: 9.8%;
+    color: #005588;
+}
+
+.play-button {
+    position: absolute;
+    width: 120px !important;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
 }

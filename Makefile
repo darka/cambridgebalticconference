@@ -1,7 +1,8 @@
-.PHONY: all cbc2013 cbc2014 root deploy deploy-dev dirs
+.PHONY: all cbc2013 cbc2014 cbc2015 root deploy deploy-dev dirs
 
-all: cbc2013 cbc2014 root
+all: cbc2013 cbc2014 cbc2015 root
 	cp -rT out/root out/cbcdev
+	cp -rT out/2015 out/cbcdev/2015
 	cp -rT out/2014 out/cbcdev/2014
 	cp -rT out/2013 out/cbcdev/2013
 	cp root_static/* out/cbcdev/
@@ -15,6 +16,9 @@ cbc2013:
 
 cbc2014:
 	staticjinja build --srcpath=2014/ --outpath=out/2014/ --static=static
+
+cbc2015:
+	staticjinja build --srcpath=2015/ --outpath=out/2015/ --static=static
 
 deploy-dev: all
 	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev

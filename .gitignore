@@ -4,3 +4,4 @@ cbc2014
 dist
 *.py[co]
 *.swp
+out

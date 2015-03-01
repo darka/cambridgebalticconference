@@ -1,0 +1,648 @@
+html {
+    font-family: "Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif; 
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body {
+    /*overflow-y: scroll;*/
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
+    text-align: center;
+    overflow: hidden;
+}
+
+#ribbon {
+    position: fixed;
+    top: 0px;
+    right: 5vw;
+}
+
+#ribbon-gen {
+    background-image: url('icons/ribbon-gen.png');
+    background-repeat: repeat-y;
+    width: 55px;
+    height: 150px;
+    display: block;
+}
+
+#ribbon-end {
+    background-image: url('icons/ribbon-end.png');
+    width: 55px;
+    height: 32px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#ribbon-gen span {
+    /*writing-mode:tb-rl;*/
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    white-space:nowrap;
+    display: block;
+    padding-left: 2em;
+}
+
+#video-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    background: url('images/background-mq.jpg');
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#scroll-arrow {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0.5em;
+}
+
+#scroll-arrow img {
+    width: 12vw;
+}
+
+#toplogo {
+    position: relative;
+    margin: 18vh 5vw 0 5vw;
+    background-image: url('images/top-logo.png');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+
+#title {
+    margin: 0 5vw;
+    font-size: 66pt;
+}
+
+#subtitle {
+    margin: 0 5vw;
+    font-size: 28pt;
+}
+
+#date {
+    margin-top: 1em;
+    font-size: 20pt;
+}
+
+#pagetop {
+    overflow: hidden;
+    position: relative;
+}
+
+#menu {
+    background-color: rgb(0,118,189);
+    color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: auto;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 0.8em;
+    text-decoration: none;
+/*    background-color: #0076BD;*/
+    color: #ffffff;
+}
+
+#menu ul li a:hover {
+    color: #0076BD;
+    background-color: #ffffff;
+}
+
+#menu ul li.register {
+    float: right;
+}
+
+#menu ul li.register a {
+    padding-left: 3em;
+    font-weight: bold;
+    background-image: url('images/register.png');
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#menu ul li.register a:hover {
+    background-image: url('images/register-inv.png');
+}
+
+.subpage h1 {
+    background-color: #0076BD;
+    color: #ffffff;
+    margin: 0;
+    clear: both;
+    padding: 10px 10%;
+}
+
+.subpage h1 a,
+.subpage h1 a:visited {
+    color: #ffffff;
+}
+
+.subpage p {
+    margin-left: 9.8%;
+    margin-right: 9.8%;
+    text-align: justify;
+}
+
+.subpage p+p {
+    margin-top: 1.5em;
+}
+
+.subpage > p:first-of-type {
+    margin-top: 2em;
+}
+
+.subpage > p:last-of-type {
+    margin-bottom: 2em;
+}
+
+#fulllogo {
+    margin: 1em auto;
+    height: 30vh;
+    background-image: url('images/full-logo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#kings {
+    width: 100%;
+    height: 70vh;
+    background-image: url('images/kings-mq.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#union {
+    width: 100%;
+    height: 30vh;
+    background-image: url('images/union-mq.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hall {
+    width: 100%;
+    height: 30vh;
+    background-image: url('images/dinner-mq.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#venuecontainer {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.venue {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.venue h3, .venue h2 {
+    margin: 0.3em 0;
+    padding: 0;
+}
+
+#photos-speaker {
+    width: 700px;
+}
+
+#photos-block {
+    width: 700px;
+    height: 380px;
+}
+
+.slidesjs-container {
+    z-index: -1;
+}
+
+.googlemap {
+    width: 90%;
+    height: 50vh;
+    margin-bottom: 2em;
+}
+
+#footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #0076BD;
+    color: #ffffff;
+}
+
+#footer #contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 2em 9.8%;
+    font-size: 1.0em;
+}
+
+#footer #contact li {
+    margin: 0.3em;
+}
+
+#footer #contact li img {
+    margin: -0.1em 1em;
+}
+
+#footer a,
+#footer a:visited {
+    color: #ffffff;
+}
+
+#schedule-container {
+    display: table;
+    border-spacing: 0.5em 0em;
+    margin: 1em 3% 0;
+}
+
+.schedule-row, .schedule-divider {
+    /*display: table-row;*/
+}
+
+.schedule-description {
+    display: table-cell;
+}
+
+.schedule-description p {
+    margin: 0;
+    padding: 0;
+}
+
+ul.schedule {
+    list-style-type: none;
+    display: table-cell;
+    width: 45%;
+    padding: 0;
+}
+
+.schedule small {
+    font-style: italic;
+}
+
+.schedule sup {
+    z-index: -1;
+}
+
+.schedule li {
+    padding-bottom: 0.7em;
+}
+
+.schedule li span:first-of-type {
+    color: #0076BD;
+    font-weight: bold;
+    font-size: 125%;
+    margin-right: 1em;
+}
+
+.schedule .talktitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.schedday {
+    display: block;
+
+    font-size: 1.5em;
+    margin: 1em 0 0.5em 0;
+}
+
+.schedsection {
+    display: block;
+
+    font-size: 0.9em;
+    margin: 1em 0 0 0;
+}
+
+.schedule-divider hr {
+    margin: 0 0 0.5em 0;
+}
+
+#registration-container {
+    margin: 1em;
+}
+
+#registration-text {
+   font-size: 15pt;
+   cursor: pointer;
+}
+
+#registration-spoiler {
+    border-left: 0.3em solid #0076BD;
+    display: none;
+}
+
+#registration-spoiler p {
+    margin-left: 2em;
+}
+
+#registration-spoiler ul {
+    list-style-type: none;
+    margin-left: 2em;
+    padding: 0px;
+}
+
+.speaker-container {
+    text-align: center;
+    margin-bottom: 1em;
+    max-width: 62em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#touch-notice {
+    color: dimgray;
+    font-size: 9pt;
+}
+
+#speakers-panel {
+    margin: 0 3em;
+    text-align: center;
+}
+
+.speaker {
+    width: 19em;
+    display: inline-block;
+    position: relative;
+    margin: 0.5em;
+}
+
+.speaker img {
+    width: 100%;
+    height: auto;
+}
+
+.speaker h3 {
+    margin: 0.1em 0;
+    padding: 0;
+    color: #0076BD;
+}
+
+.speaker h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.speaker ul {
+    list-style-type: none;
+    margin: 0 5%;
+    padding: 0;
+    text-align: left;
+}
+
+.speaker ul li {
+    text-indent: -0.3em;
+}
+
+.speaker ul li:before {
+    content: "• ";
+    color: #0076BD;
+}
+
+.speaker .speaker-info-panel {
+    position: absolute;
+    width: 100%;
+    bottom: 0.2em;
+    padding: 0;
+    max-height: 100%;
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.speaker .speaker-bio {
+    margin-bottom: 0.4em;
+    font-size: 10pt;
+    display: none;
+}
+
+.speaker .speaker-conf-panel {
+    font-size: 9pt;
+    margin-bottom: 0.4em;
+}
+
+.soclogo {
+    width: 15%;
+    height: auto;
+    margin: 1em 2em;
+    vertical-align: middle;
+}
+
+.latvians {
+    width: 10%;
+    height: auto;
+}
+
+.sponsorlogo {
+    width: 10%;
+    height: auto;
+    margin: 2%;
+    vertical-align: middle;
+}
+
+.narrowerlogo {
+    width: 7%;
+}
+
+.widelogo {
+    width: 15%;
+}
+
+.widerlogo {
+    width: 20%;
+}
+
+.widestlogo {
+    width: 25%;
+}
+
+.workshoplist {
+    text-align: justify;
+}
+
+.workshoplist span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.workshoplist li+li {
+    padding-top: 1em;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+a,
+a:visited {
+    color: #0076BD;
+}
+
+.soclist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.soclist li {
+    margin: 0;
+    padding: 0;
+}
+
+#committeelist {
+    margin: 1em 9.8%;
+    padding: 0;
+    list-style-type: none;
+}
+
+#committeelist li {
+    padding-top: 0.75em;
+}
+
+h3.regnotice {
+    margin: 1em 0;
+    padding: 0 9.8%;
+}
+
+.margins {
+    margin: 0 9.8%;
+}
+
+p.notice {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p.sponsornotice {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+h2.about_subtitle {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.blue {
+    color: #0076BD;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.centered,
+.subpage p.centered {
+    text-align: center;
+}
+
+#slidercontainer {
+    margin: 2em 25%;
+    padding: 0;
+    overflow: hidden;
+}
+
+span.slidesjs-navigation {
+    font-weight: bold;
+    font-size: 2em;
+    color: #000000;
+    cursor: pointer;
+}
+
+span.slidesjs-navigation:hover {
+    color: #0076BD;
+}
+
+span.slidesjs-previous {
+    float: left;
+}
+
+span.slidesjs-next {
+    float: right;
+}
+
+.video {
+    margin: 2em 0;
+    text-align: center;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.vimeo {
+    width: 100%;
+}
+
+#sponsors {
+    margin-bottom: 1em;
+}
+
+.maps-container {
+    position: relative;
+}
+
+.maps-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket-container {
+    margin: 2em 9.8%;
+}
+
+.patron-container {
+    text-align: center;
+    margin: 2em auto;
+}
