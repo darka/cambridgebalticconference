@@ -1,8 +1,7 @@
-{% extends "common/_year_base.tmpl.html" %}
+{% extends "base/_year_base.tmpl.html" %}
 
 {% block head %}
     {{ super() }}
-    <script src="static/jquery.slides.min.js"></script>
 {% endblock %}
 
 {% set nav = [
@@ -19,23 +18,23 @@
 ] %}
 
 {% block bodyscript %}
+    {{ super() }}
     setTimeout(function() {
         $('#video-background')[0].play();
     }, 3000);
 {% endblock %}
 
 {% block header %}
-    <div id="ribbon">
-        <div id="ribbon-gen">
-            <span>This is my long text</span>
-        </div>
-        <div id="ribbon-end"></div>
-    </div>
     <video id="video-background" src="static/images/video.webm" poster="static/images/background-mq.jpg" loop></video>
-    <div id="toplogo"></div>
-    <div id="title">Cambridge Baltic Conference</div>
-    <div id="subtitle">New Challenges and New Insights for and from the Baltic States</div>
-    <div id="date">10-11th October 2014</div>
+    <div id="banner" class="row">
+        <div class="grid_12" style="height: 15vh"></div>
+        <div class="grid_12"><div id="toplogo"></div></div>
+        <div class="grid_11 offset_1 left">
+            <div id="title">Cambridge<br/>Baltic<br/>Conference</div>
+            <div id="subtitle">Technology and Business</div>
+            <div id="date">10-11th October 2014</div>
+        </div>
+    </div>
     <div id="scroll-arrow"><img src="static/icons/scroll-arrow.png" /></div>
 {% endblock %}
 

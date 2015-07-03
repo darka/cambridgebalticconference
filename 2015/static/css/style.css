@@ -4,8 +4,20 @@ html {
     color: #000000;
 }
 
+h1 {
+    font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
 body {
     /*overflow-y: scroll;*/
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 #header {
@@ -13,42 +25,9 @@ body {
     height: 100vh;
     color: #ffffff;
     text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
-}
-
-#ribbon {
-    position: fixed;
-    top: 0px;
-    right: 5vw;
-}
-
-#ribbon-gen {
-    background-image: url('icons/ribbon-gen.png');
-    background-repeat: repeat-y;
-    width: 55px;
-    height: 150px;
-    display: block;
-}
-
-#ribbon-end {
-    background-image: url('icons/ribbon-end.png');
-    width: 55px;
-    height: 32px;
-    background-repeat: no-repeat;
-    display: block;
-}
-
-#ribbon-gen span {
-    /*writing-mode:tb-rl;*/
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    white-space:nowrap;
-    display: block;
-    padding-left: 2em;
+    position: relative;
 }
 
 #video-background {
@@ -58,7 +37,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1000;
-    background: url('images/background-mq.jpg');
+    background: url('../images/background-mq.jpg');
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,42 +52,48 @@ body {
 }
 
 #scroll-arrow img {
-    width: 12vw;
+    width: 130px;
 }
 
 #toplogo {
     position: relative;
-    margin: 18vh 5vw 0 5vw;
-    background-image: url('images/top-logo.png');
-    background-position: top center;
+    background-image: url('../images/top-logo.png');
+    background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 25vh;
+    height: 100px;
 }
 
-#title {
-    margin: 0 5vw;
-    font-size: 66pt;
+#banner {
+    font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+    max-width: 100%;
 }
+
+#title {    
+    font-size: 64pt;
+    line-height: 95%;
+}
+
+@media only screen and (max-width: 767px) {
+    #title {    
+        font-size: 15vw;
+    }
+}   
 
 #subtitle {
-    margin: 0 5vw;
+    padding-top: 0.5em;
     font-size: 28pt;
 }
 
 #date {
-    margin-top: 1em;
+    padding-top: 0.3em;
     font-size: 20pt;
-}
-
-#pagetop {
-    overflow: hidden;
-    position: relative;
 }
 
 #menu {
     background-color: rgb(0,118,189);
     color: #ffffff;
+    height: 50px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -149,14 +134,56 @@ body {
 #menu ul li.register a {
     padding-left: 3em;
     font-weight: bold;
-    background-image: url('images/register.png');
+    background-image: url('../images/register.png');
     background-size: auto 75%;
     background-repeat: no-repeat;
     background-position: center left;
 }
 
 #menu ul li.register a:hover {
-    background-image: url('images/register-inv.png');
+    background-image: url('../images/register-inv.png');
+}
+
+.navicon-line {
+  width: 24px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.hamburger-wrapper {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.navicon {
+    position: absolute;
+    left: 13px;
+    top: 17px;
+}
+
+.navbar-right {
+    background-color: #0076BD !important;
+}
+
+.navbar-right nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.navbar-right ul li a {
+    display: block;
+    padding: 0.8em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-right ul li a:hover {
+    color: #0076BD;
+    background-color: #ffffff;
 }
 
 .subpage h1 {
@@ -193,7 +220,7 @@ body {
 #fulllogo {
     margin: 1em auto;
     height: 30vh;
-    background-image: url('images/full-logo.png');
+    background-image: url('../images/full-logo.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -202,7 +229,7 @@ body {
 #kings {
     width: 100%;
     height: 70vh;
-    background-image: url('images/kings-mq.jpg');
+    background-image: url('../images/kings-mq.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,7 +238,7 @@ body {
 #union {
     width: 100%;
     height: 30vh;
-    background-image: url('images/union-mq.jpg');
+    background-image: url('../images/union-mq.jpg');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,7 +247,7 @@ body {
 #hall {
     width: 100%;
     height: 30vh;
-    background-image: url('images/dinner-mq.jpg');
+    background-image: url('../images/dinner-mq.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
