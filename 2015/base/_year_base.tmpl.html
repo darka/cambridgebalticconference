@@ -12,19 +12,21 @@
 </div>
 
 <div id="menu" class="sb-slide">
-    <div class="row show-screen">
-        <ul>
-            {% for item in nav %}
-            <li><a {% if item[0][0] == '#' %}class="scroller"{% endif %} href="{{ item[0] }}">{{ item[1] }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="hide-screen">
-        <div class="hamburger-wrapper right">
-            <div class="sb-toggle-right navicon">
-                <div class="navicon-line"></div>
-                <div class="navicon-line"></div>
-                <div class="navicon-line"></div>
+    <div id="menu-content">
+        <div class="row show-screen">
+            <ul>
+                {% for item in nav %}
+                <li><a {% if item[0][0] == '#' %}class="scroller"{% endif %} href="{{ item[0] }}">{{ item[1] }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="hide-screen">
+            <div class="hamburger-wrapper right">
+                <div class="sb-toggle-right navicon">
+                    <div class="navicon-line"></div>
+                    <div class="navicon-line"></div>
+                    <div class="navicon-line"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -67,13 +69,30 @@
             return false;
         });
 
-        var $menu = $('#menu');
+        var $menu = $('#menu-content');
+        var $subpages = $('.subpage-header');
+        $subpages.each(function() {
+            var $this = $(this);
+            $this.data("offset", $this.offset().top);
+        });
+        var $window = $(window);
         $menu.css('background-color', 'transparent');
-        $(window).scroll(function() {
-            if($menu.offset().top < $(window).height()) 
+        $window.scroll(function() {
+            if($menu.offset().top < $window.height()) 
                 $menu.css('background-color', 'transparent');
             else $menu.css('background-color', '');
+
+            $subpages.each(function() {
+                var $this = $(this);
+                if($this.data("offset") < $window.scrollTop()) {
+                    $this.addClass("fixed");
+                } else {
+                    $this.removeClass("fixed");
+                }
+            });
         });
+
+
 
         $.slidebars();
     {% endblock %}

@@ -1,5 +1,8 @@
 <div class="subpage">
-    <h1 id="{% block subpage_id %}{% endblock %}">{% block subpage_title %}{% endblock %}</h1>
+	<div class="subpage-header">
+		<h1 id="{% block subpage_id %}{% endblock %}">{% block subpage_title %}{% endblock %}</h1>
+	</div>
+    
     {% block subpage_content %}
     {% endblock %}
     <script>
