@@ -1,5 +1,6 @@
 html {
-    font-family: "Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif; 
+    font-family: "Hind", "Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif; 
+    line-height: 140%;
     background-color: #ffffff;
     color: #000000;
 }
@@ -190,26 +191,14 @@ body {
     background-color: #ffffff;
 }
 
-.subpage {
-    overflow-x: visible;
-}
-
-.subpage-header.fixed {
-    top: 50px;
-}
-
-@media only screen and (max-width: 959px) {
-    .subpage-header.fixed {
-        top: 0;
-    }
+.subpage-header {
+    background-color: #0076BD;
+    color: #ffffff;
 }
 
 .subpage h1 {
-    background-color: #0076BD;
-    color: #ffffff;
-    margin: 0;
     clear: both;
-    padding: 10px 10%;
+    padding: 10px 0;
 }
 
 .subpage h1 a,
@@ -429,45 +418,49 @@ ul.schedule {
     padding: 0px;
 }
 
-.speaker-container {
-    text-align: center;
-    margin-bottom: 1em;
-    max-width: 62em;
-    margin-right: auto;
-    margin-left: auto;
+.border-panel {
+    border-right: 1px blue dashed;
 }
 
-#touch-notice {
-    color: dimgray;
-    font-size: 9pt;
+.speaker-card {
+    max-width: 260px;
+    margin: 0 auto 20px auto;
 }
 
-#speakers-panel {
-    margin: 0 3em;
-    text-align: center;
-}
-
-.speaker {
-    width: 19em;
-    display: inline-block;
-    position: relative;
-    margin: 0.5em;
-}
-
-.speaker img {
+.speaker-photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
-    height: auto;
+    padding-top: 100%;
 }
 
-.speaker h3 {
-    margin: 0.1em 0;
-    padding: 0;
-    color: #0076BD;
+.speaker-info {
+    line-height: 100%;
 }
 
-.speaker h4 {
+.speaker-info div,h3 {
+    margin-bottom: 0.2em;
+}
+
+.speaker-info h3 {
+    margin: 0.4em 0;
+}
+
+.panel-description {
+}
+
+.panel-description p {
     margin: 0;
-    padding: 0;
+}
+
+.speaker-info .speaker-role {
+    font-style: italic;
+    font-size: small;
+}
+
+.speaker-info .speaker-title {
+
 }
 
 .speaker ul {
@@ -486,25 +479,6 @@ ul.schedule {
     color: #0076BD;
 }
 
-.speaker .speaker-info-panel {
-    position: absolute;
-    width: 100%;
-    bottom: 0.2em;
-    padding: 0;
-    max-height: 100%;
-    background: rgba(240, 240, 240, 0.8);
-}
-
-.speaker .speaker-bio {
-    margin-bottom: 0.4em;
-    font-size: 10pt;
-    display: none;
-}
-
-.speaker .speaker-conf-panel {
-    font-size: 9pt;
-    margin-bottom: 0.4em;
-}
 
 .soclogo {
     width: 15%;
@@ -690,4 +664,10 @@ span.slidesjs-next {
 .patron-container {
     text-align: center;
     margin: 2em auto;
+}
+
+/* SPEAKERS */
+
+#ian-white {
+    background-image: url("../images/prof-ian-white.jpg");
 }
