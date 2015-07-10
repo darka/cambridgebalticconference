@@ -5,244 +5,104 @@
 
 {% block subpage_content %}
     <div id="kings"></div>
-    <div id="schedule-container">
-        <div class="schedule-divider">
-            <span class="schedday">Friday 10th October - Workshops Day<sup>*</sup></span>
-        </div>
-        <div id="registration-container">
-            <a id="registration-text">▶ Student registration</a>
-            <div id="registration-spoiler">
-                <p>Please fill in <b>both</b> forms to register:</p>
-                <ul>
-                    <li><a href="https://docs.google.com/forms/d/1RLaQem0uE_A-7DgBLc5UDed0eCL7ipqPII1WJKll5x0/viewform" target="_blank">
-                        CBC 2014 Workshops Day application form (Part 1 of 2)</a>
-                    <li><a href="https://services.google.com/fb/forms/cbc2014/" target="_blank">
-                        CBC 2014 Workshops Day application form (Part 2 of 2)</a>
-                </ul>
-            </div>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>09:00 - 10:00</span>Registration and Introduction</li>
-                <li><span>10:00 - 12:00</span>Google X Challenge on Innovation in Education</li>
-                <li><span>12:00 - 13:00</span>Teamwork on Policy Proposals</li>
-                <li><span>13:00 - 14:30</span>Working Lunch</li>
-                <li><span>14:30 - 18:00</span>Resolution Writing and Consultations with the Experts</li>
-                <li><span>18:00 - 18:30</span>Leadership and Debating Workshop</li>
-                <li><span>18:30 - 19:30</span>Impromptu Debate Competition</li>
-                <li><span>20:00 - 21:00</span>Dinner</li>
-                <li><small><sup>*</sup> - Note that the number of available places will be limited.</small></li>
-            </ul>
-            <div class="schedule-description">
-                <p>
-                    We, ourselves young students, are taking the lead in educational innovation by creating an educational project within the conference on Education. The mission of this educational project is to create a medium of exchange for educational change. Workshop Day will be a day of conference meetings and workshops for discussions on education and skills training, which are designed and dedicated to high-flying students from the Baltic countries and the United Kingdom.
-                </p>
-                <p>
-                    We believe that good questions outrank easy answers. We want to empower the students so that they can give answers by representing their views and coming up with solutions that will re-envision and reinvigorate Education in the Baltics. In addition, we will prepare them for asking demanding questions by providing training through informational, leadership, debate and public speaking workshops and discussions, which will enable them to question the answers represented by the speakers on the second conference day. In doing this and representing the ideas of the youth on the second day panel discussions we want to encourage everyone to always think of themselves as students, who continuously learn and go forward.
-                </p>
-            </div>
-        </div>
 
-        <div class="speaker-container mentor-panel">
-            {#<div class="speaker">
-                <img src="static/images/mr-linnar-viik.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Linnar Viik</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Co-owner, Member of the Board, Strategy&amp;Investments at Mobi Solutions</li>
-                            <li>Member of the Council at Research and Development Council of Estonia</li>
-                            <li>Member of the Governing Board at European Institute of Innovation and Technology (2008-2014)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>#}
-            <div class="speaker">
-                <img src="static/images/arnoldas-pranckevicius.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Arnoldas Pranckevičius</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>External Policies Adviser to the President of the EP</li>
-                            <li>President of the Lithuanian Community in Belgium</li>
-                            <li>Domestic Policy Adviser to the President of Lithuania (2004-2005)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-			{#
-             <div class="speaker">
-                <img src="static/images/milda-darguzaite.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Milda Dargužaitė</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Director General of Invest Lithuania</li>
-                            <li>Adviser to the Lithuanian Minister of Economy (2011-2012)</li>
-                            <li>Vice President at Goldman Sachs (2004-2011)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-			#}
-            <div class="speaker">
-                <img src="static/images/arturas-ratkus.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Artūras Ratkus</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Research Fellow in Linguistics at University of Vilnius (2013–present)</li>
-                            <li>Senior Rouse Ball stipendiary at Trinity College, Cambridge (2009–2010)</li>
-                            <li>EERB stipendiary at Trinity College, Cambridge (2006–2009)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="static/images/steven-schrage.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Steven Schrage</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Former senior G8, White House, State Department and U.S. presidential campaign official</li>
-                            <li>Served as a Harvard Institute of Politics Fellow</li>
-                            <li>Entrepreneur/business founder with prior doctoral work at Harvard Business School</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="static/images/dominykas-milasius.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Dominykas Milašius</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Co-founder of Young Leaders Debate, MEDMUN, LIMUN</li>
-                            <li>Security Policy Adviser (Intern) to Lithuanian Mission to the UN (2014)</li>
-                            <li>Special Correspondent, Cairo Turmoil, LRT (2013)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="static/images/ted-loveday.jpg">
-                <div class="speaker-info-panel">
-                    <h3>Ted Loveday</h3>
-                    <div class="speaker-conf-panel">Workshops Day mentor</div>
-                    <div class="speaker-bio">
-                        <ul>
-                            <li>Student journalist and member of CDI Education Project</li>
-                            <li>Speakers Officer for the Cambridge Union Society (Easter 2014)</li>
-                            <li>Director of Operations, Cambridge University International Model UN and Treasurer, Cambridge UN Association (2013)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="schedule-divider">
+    <div class="row">
+        <div id="schedule-container">
             <span class="schedday">Saturday 11th October - Conference Day</span>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>09:00 - 10:00</span>Registration</li>
-                <li><span>10:05 - 10:25</span>Welcome speech</li>
-            </ul>
-        </div>
-        <div class="schedule-divider">
-            <span class="schedsection">First session - Skills versus Knowledge in Secondary Education</span><hr>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>10:30 - 10:50</span>Keynote speech</li>
-                <li><span>11:00 - 12:00</span>Panel discussion</li>
-                <li><span>12:00 - 12:15</span>Break</li>
-            </ul>
-            <div class="schedule-description">
-                <p>
-                    Education and business leaders worldwide desire today's students to both master school subjects and excel in areas such as problem solving, critical thinking, and interpersonal communication - abilities referred to as "21<sup>st</sup> century skills". Could development of transferable knowledge and skills be the key to success in education and work also in the Baltics? How and when this is to be achieved?
-                </p>
+            <div class="schedule-row row">
+                <div class="grid_5">
+                    <ul class="schedule">
+                        <li><span>09:00 - 10:00</span>Registration</li>
+                        <li><span>10:05 - 10:25</span>Welcome speech</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="schedule-divider">
+                <span class="schedsection">First session - Skills versus Knowledge in Secondary Education</span>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_5">
+                    <ul class="schedule">
+                        <li><span>10:30 - 10:50</span>Keynote speech</li>
+                        <li><span>11:00 - 12:00</span>Panel discussion</li>
+                        <li><span>12:00 - 12:15</span>Break</li>
+                    </ul>
+                </div>
+                <div class="schedule-description grid_7">
+                    <p>
+                        Education and business leaders worldwide desire today's students to both master school subjects and excel in areas such as problem solving, critical thinking, and interpersonal communication - abilities referred to as "21<sup>st</sup> century skills". Could development of transferable knowledge and skills be the key to success in education and work also in the Baltics? How and when this is to be achieved?
+                    </p>
+                </div>
+            </div>
+            <div class="schedule-divider">
+                <span class="schedsection">Second session - Best Practices in Higher Education</span>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_5">
+                    <ul class="schedule">
+                        <li><span>12:20 - 12:40</span>Keynote speech</li>
+                        <li><span>12:50 - 13:50</span>Panel discussion</li>
+                        <li><span>14:00 - 15:00</span>Lunch break</li>
+                    </ul>
+                </div>
+                <div class="schedule-description grid_7">
+                    <p>
+                        The panel on higher education will discuss the ideal practices in higher education in both the Baltic countries and the UK. Speakers will touch upon issues such as practical versus theoretical approaches to learning, the role of extracurricular activities, students' work experience and international student exchanges.
+                    </p>
+                </div>
+            </div>
+            <div class="schedule-divider">
+                <span class="schedsection">Third session - Does Education Foster Entrepreneurship?</span>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_5">
+                    <ul class="schedule">
+                        <li><span>15:10 - 15:30</span>Keynote speech</li>
+                        <li><span>15:40 - 16:40</span>Panel discussion</li>
+                        <li><span>16:40 - 16:55</span>Break</li>
+                    </ul>
+                </div>
+                <div class="schedule-description grid_7">
+                    <p>
+                        Does education foster entrepreneurship? Would successful entrepreneurs have been successful regardless of their education? What can we change in our current educational system for there to be more Zuckerbergs etc., particularly within the Baltic States?
+                    </p>
+                </div>
+            </div>
+            <div class="schedule-divider">
+                <span class="schedsection">Closing session - Future Trends and Innovations in the Field of Education</span>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_5">
+                    <ul class="schedule">
+                        <li><span>17:00 - 17:20</span>Keynote speech</li>
+                        <li><span>17:30 - 18:30</span>Panel discussion</li>
+                    </ul>
+                </div>
+                <div class="schedule-description grid_7">
+                    <p>
+                        From primary to higher education, traditional teaching methods are being challenged both globally and within Baltic countries and are shaping a new way of building knowledge and teaching the youth of today and tomorrow. Where is the future of education moving, as well as where should it be moving, in both the level of Baltic states and the rest of the world?
+                    </p>
+                </div>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_12">
+                    <ul class="schedule">
+                        <li><span>18:40 - 19:00</span>Closing video address and Q&amp;A by Prof Robert J. Shiller, 2013 Nobel laureate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="schedule-divider">
+                <span class="schedsection">Networking dinner</span>
+            </div>
+            <div class="schedule-row row">
+                <div class="grid_12">
+                    <ul class="schedule">
+                        <li><span>19:30 - 23:00</span>Dinner and networking reception<sup>*</sup></li>
+                        <li><small><sup>*</sup> - Note that the number of available places will be limited.</small></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="schedule-divider">
-            <span class="schedsection">Second session - Best Practices in Higher Education</span><hr>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>12:20 - 12:40</span>Keynote speech</li>
-                <li><span>12:50 - 13:50</span>Panel discussion</li>
-                <li><span>14:00 - 15:00</span>Lunch break</li>
-            </ul>
-            <div class="schedule-description">
-                <p>
-                    The panel on higher education will discuss the ideal practices in higher education in both the Baltic countries and the UK. Speakers will touch upon issues such as practical versus theoretical approaches to learning, the role of extracurricular activities, students' work experience and international student exchanges.
-                </p>
-            </div>
-        </div>
-        <div class="schedule-divider">
-            <span class="schedsection">Third session - Does Education Foster Entrepreneurship?</span><hr>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>15:10 - 15:30</span>Keynote speech</li>
-                <li><span>15:40 - 16:40</span>Panel discussion</li>
-                <li><span>16:40 - 16:55</span>Break</li>
-            </ul>
-            <div class="schedule-description">
-                <p>
-                    Does education foster entrepreneurship? Would successful entrepreneurs have been successful regardless of their education? What can we change in our current educational system for there to be more Zuckerbergs etc., particularly within the Baltic States?
-                </p>
-            </div>
-        </div>
-        <div class="schedule-divider">
-            <span class="schedsection">Closing session - Future Trends and Innovations in the Field of Education</span><hr>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>17:00 - 17:20</span>Keynote speech</li>
-                <li><span>17:30 - 18:30</span>Panel discussion</li>
-            </ul>
-            <div class="schedule-description">
-                <p>
-                    From primary to higher education, traditional teaching methods are being challenged both globally and within Baltic countries and are shaping a new way of building knowledge and teaching the youth of today and tomorrow. Where is the future of education moving, as well as where should it be moving, in both the level of Baltic states and the rest of the world?
-                </p>
-            </div>
-        </div>
-        <div class="schedule-divider"><br /></div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>18:40 - 19:00</span>Closing video address and Q&amp;A by Prof Robert J. Shiller, 2013 Nobel laureate</li>
-            </ul>
-        </div>
-        <div class="schedule-divider">
-            <span class="schedsection">Networking dinner</span><hr>
-        </div>
-        <div class="schedule-row">
-            <ul class="schedule">
-                <li><span>19:30 - 23:00</span>Dinner and networking reception<sup>*</sup></li>
-                <li><small><sup>*</sup> - Note that the number of available places will be limited.</small></li>
-            </ul>
-        </div>
-    </div>
+    </div> 
     
-{% endblock %}
-{% block bodyscript %}
-    {{ super() }}
-    $(function() {
-        $(".speaker-container.mentor-panel").hover(function(){
-            $(".mentor-panel .speaker-bio").slideToggle();
-        }, function(){
-            $(".mentor-panel .speaker-bio").slideToggle();
-        });
-
-        $("#registration-text").click(function() {
-            $("#registration-spoiler").toggle();
-        });
-    });
 {% endblock %}

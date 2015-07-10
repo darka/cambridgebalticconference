@@ -2,10 +2,8 @@
 	<div class="subpage-header">
 		<h1 id="{% block subpage_id %}{% endblock %}" class="row offset_1">{% block subpage_title %}{% endblock %}</h1>
 	</div>
-    <div class="subpage-content row">
-	    {% block subpage_content %}
-	    {% endblock %}
-	</div>
+    {% block subpage_content %}
+    {% endblock %}
     <script>
         {% block bodyscript %}
     	{% endblock %}
