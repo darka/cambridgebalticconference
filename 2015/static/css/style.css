@@ -1,3 +1,5 @@
+/* General rules */
+
 html {
     font-family: "Hind", "Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif; 
     line-height: 140%;
@@ -20,6 +22,8 @@ body {
 .right {
     float: right;
 }
+
+/* Header rules */
 
 #header {
     width: 100%;
@@ -75,11 +79,6 @@ body {
     line-height: 95%;
 }
 
-@media only screen and (max-width: 767px) {
-    #title {    
-        font-size: 15vw;
-    }
-}   
 
 #subtitle {
     padding-top: 0.5em;
@@ -90,6 +89,8 @@ body {
     padding-top: 0.8em;
     font-size: 20pt;
 }
+
+/* Menu rules */
 
 #menu {
     position: fixed;
@@ -191,6 +192,8 @@ body {
     background-color: #ffffff;
 }
 
+/* Subpage general rules */
+
 .subpage-header {
     background-color: #0076BD;
     color: #ffffff;
@@ -224,14 +227,32 @@ body {
     margin-bottom: 2em;
 }
 
-#fulllogo {
-    margin: 1em auto;
-    height: 30vh;
-    background-image: url('../images/full-logo.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* Photos subpage rules */
+#past-photo-container img {
+    width: 100%;
+    vertical-align: top;
 }
+
+#past-photo-container div {
+    width: 50%; 
+}
+
+#photos-block {
+    margin: 0 auto;
+}
+
+#view-more-pictures {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 1.4em;
+}
+
+#view-more-pictures a {
+    text-decoration: none;
+}
+
+
 
 #kings {
     width: 100%;
@@ -280,19 +301,6 @@ body {
     padding: 0;
 }
 
-#photos-speaker {
-    width: 700px;
-}
-
-#photos-block {
-    width: 700px;
-    height: 380px;
-}
-
-.slidesjs-container {
-    z-index: -1;
-}
-
 .googlemap {
     width: 90%;
     height: 50vh;
@@ -336,9 +344,6 @@ body {
 
 .schedule-row {
     margin-top: 13px !important;
-}
-
-.schedule-description {
 }
 
 .schedule-description p {
@@ -672,7 +677,19 @@ span.slidesjs-next {
 }
 
 /* SPEAKERS */
-
 #placekitten {
     background-image: url("http://placekitten.com/g/512/512");
 }
+
+
+/* MOBILE ONLY STYLES */
+
+@media only screen and (max-width: 767px) {
+    #title {    
+        font-size: 15vw;
+    }
+
+    #past-photo-container div {
+        width: 95%;
+    }
+}   

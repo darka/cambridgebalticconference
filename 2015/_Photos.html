@@ -4,33 +4,13 @@
 {% block subpage_title %}Photos{% endblock %}
 
 {% block subpage_content %}
-    <p class="centered bold">Photos from Cambridge Baltic Conference 2014 are available!</p>
-    <div class="speaker-container">
-        <a href="https://www.dropbox.com/sc/40w2w1k21h324vl/AACWJYiNLqB8XoQj_vg5JeY5a">
-            <div id="photos-speaker" class="speaker">
-                <div id="photos-block"> 
-                    {% for i in range(0, 4) %}
-                    <img src="static/images/cover-{{ i }}.jpg">
-                    {% endfor %}
-                </div>
-                <div class="speaker-info-panel">
-                    <h3>CBC 2014 Photos</h3>
-                    <div class="speaker-conf-panel">View via Dropbox →</div>
-                </div>
-            </div>
-        </a>
+    <div id="photos-block">
+        <div id="past-photo-container" class="clearfix"> 
+            <div class="left"><img src="static/images/cover-2.jpg"></div>
+            <div class="left"><img src="static/images/cover-3.jpg"></div>
+        </div>
+        <div id="view-more-pictures">
+            <a href="https://www.dropbox.com/sc/40w2w1k21h324vl/AACWJYiNLqB8XoQj_vg5JeY5a">View more via Dropbox →</a>
+        </div>
     </div>
-{% endblock %}
-
-{% block bodyscript %}
-    {{ super() }}
-    $(function() {
-        $("#photos-block").slidesjs({
-            width: 700,
-            height: 380,
-            navigation: { active: false },
-            pagination: { active: false },
-            play: { auto: true }
-        });
-    });
 {% endblock %}
