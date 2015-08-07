@@ -4,3 +4,4 @@ virtualenv --python=python2.7 ve
 . ./ve/bin/activate
 pip install jinja2
 pip install staticjinja
+patch -p0 < staticjinja.patch
