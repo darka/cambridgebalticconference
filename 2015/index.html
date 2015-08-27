@@ -19,13 +19,10 @@
 
 {% block bodyscript %}
     {{ super() }}
-    setTimeout(function() {
-        $('#video-background')[0].play();
-    }, 3000);
 {% endblock %}
 
 {% block header %}
-    <video id="video-background" src="static/images/video.webm" poster="static/images/background-mq.jpg" loop></video>
+    <div id="background"></div>
     <div id="banner" class="row">
         <div class="grid_12" style="height: 12vh"></div>
         <div class="grid_12"><div id="toplogo"></div></div>

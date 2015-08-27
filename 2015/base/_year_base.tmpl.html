@@ -56,7 +56,7 @@
         var menuHeight = $('#menu').height();
         $('a.scroller').click(function() {
             var href = $.attr(this, 'href')
-            var scrollto = $(href).offset().top - menuHeight;
+            var scrollto = Math.ceil($(href).offset() - menuHeight);
             $root.animate({
                 scrollTop: scrollto
             }, 500, function () {
@@ -73,7 +73,7 @@
         var $window = $(window);
         $menu.css('background-color', 'transparent');
         $window.scroll(function() {
-            if($menu.offset().top < $window.height()) 
+            if($menu.offset().top < $window.height() - menuHeight) 
                 $menu.css('background-color', 'transparent');
             else $menu.css('background-color', '');
         });
