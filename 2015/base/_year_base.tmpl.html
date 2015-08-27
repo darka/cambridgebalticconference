@@ -56,7 +56,7 @@
         var menuHeight = $('#menu').height();
         $('a.scroller').click(function() {
             var href = $.attr(this, 'href')
-            var scrollto = Math.ceil($(href).offset() - menuHeight);
+            var scrollto = Math.ceil($(href).offset().top - menuHeight);
             $root.animate({
                 scrollTop: scrollto
             }, 500, function () {
