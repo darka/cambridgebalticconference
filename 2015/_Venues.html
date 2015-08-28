@@ -4,15 +4,18 @@
 {% block subpage_title %}Venues{% endblock %}
 
 {% block subpage_content %}
-<div id="venue-container">
+<div id="venue-container" class="clearfix">
   <div class="venue">
-    <div id="union"></div>
+    <div id="union-picture"></div>
     <div class="content-padding">
-      <p>
-          <span>Conference venue:</span><br/>
-          <span>The Cambridge Union Society</span><br/>
-          <span>9a Bridge Street, Cambridge, CB2 1UB</span>
-      </p>
+      <div class="venue-info-card clearfix">
+        <div class="venue-icon-castle"></div>
+        <div class="venue-info">
+          <div class="venue-purpose">Conference venue:</div>
+          <div class="venue-name">The Cambridge Union Society</div>
+          <div class="venue-address">9a Bridge Street, Cambridge, CB2 1UB</div>
+        </div>
+      </div>
 
       <div class="maps-container">
           <div class="maps-overlay" onClick="style.pointerEvents='none'"></div>
@@ -22,16 +25,19 @@
 
   </div>
   <div class="venue">
-    <div id="hall"></div>
-      <div class="content-padding">
-      <p>
-          <span>Dinner venue:</span><br/>
-          <span>Corpus Christi College</span><br/>
-          <span>9a Bridge Street, Cambridge, CB2 1UB</span>
-      </p>
+    <div id="hall-picture"></div>
+    <div class="content-padding">
+      <div class="venue-info-card clearfix">
+        <div class="venue-icon-castle"></div>
+        <div class="venue-info">
+          <div class="venue-purpose">Dinner venue:</div>
+          <div class="venue-name">Corpus Christi College</div>
+          <div class="venue-address">Trumpington St, Cambridge CB2 1RH</div>
+        </div>
+      </div>
       <div class="maps-container">
           <div class="maps-overlay" onClick="style.pointerEvents='none'"></div>
-          <iframe class="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2445.0720031434807!2d0.115133!3d52.205738999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870be90940b35%3A0xffdd76b080e062f9!2sTrinity+Hall+Cambridge!5e0!3m2!1sen!2suk!4v1407459460566"></iframe>
+          <iframe class="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.2217841161846!2d0.11784499999999996!3d52.203016999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d870a54a836801%3A0x38052bc28b001b67!2sCorpus+Christi+College!5e0!3m2!1sen!2suk!4v1440771456222"></iframe>
       </div>
     </div>
   </div>

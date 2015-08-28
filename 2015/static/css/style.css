@@ -134,23 +134,6 @@ body {
     background-color: #FFFFFF;
 }
 
-#menu ul li.register {
-    float: right;
-}
-
-#menu ul li.register a {
-    padding-left: 3em;
-    font-weight: bold;
-    background-image: url('../images/register.png');
-    background-size: auto 75%;
-    background-repeat: no-repeat;
-    background-position: center left;
-}
-
-#menu ul li.register a:hover {
-    background-image: url('../images/register-inv.png');
-}
-
 .navicon-line {
   width: 24px;
   height: 3px;
@@ -252,7 +235,7 @@ body {
     background-size: cover;
 }
 
-#union {
+#union-picture {
     width: 100%;
     height: 30vh;
     background-image: url('../images/union-mq.jpg');
@@ -261,7 +244,7 @@ body {
     background-size: cover;
 }
 
-#hall {
+#hall-picture {
     width: 100%;
     height: 30vh;
     background-image: url('../images/dinner-mq.jpg');
@@ -271,7 +254,7 @@ body {
 }
 
 #venue-container {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0;
     width: 100%;
     background-color: #443F79;
@@ -281,6 +264,40 @@ body {
 .venue {
     width: 50%;
     float: left;
+    margin-bottom: 20px;
+}
+
+.venue-info-card {
+    margin: 20px;
+}
+
+.venue-info {
+    float: left;
+}
+
+.venue-icon-castle {
+    width: 50px;
+    height: 50px;
+    margin: 9px 18px;
+    background-image: url('../icons/castle.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+} 
+
+.venue-purpose {
+
+}
+
+.venue-name {
+    margin: 0 0 0.15em 0;
+    font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 1.6em;
+}
+
+.venue-address {
+    font-style: italic;
 }
 
 .content-padding {
@@ -289,6 +306,7 @@ body {
 
 .googlemap {
     width: 100%;
+    height: 350px;
 }
 
 #footer {
@@ -670,7 +688,7 @@ span.slidesjs-next {
     .venue {
         width: 100%;
     }
-    
+
     .content-padding {
         padding: 0 16px;
     }
