@@ -323,16 +323,16 @@ body {
     color: #ffffff;
 }
 
-.schedule-divider span {
-    font-size: larger;
-}
-
 .schedule-divider {
     border-bottom: 1px solid #443F79;
 }
 
 .schedule-row {
     margin-top: 13px !important;
+}
+
+.schedule-row:last-child {
+    margin-bottom: 20px !important;
 }
 
 .schedule-description p {
