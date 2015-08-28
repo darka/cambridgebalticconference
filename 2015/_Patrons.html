@@ -4,23 +4,32 @@
 {% block subpage_title %}Patrons{% endblock %}
 
 {% block subpage_content %}
-    <div class="patron-container">
-        <div class="speakerrow">
-            <div class="speaker">
-                <img src="static/images/david-hunt.jpg">
-                <h3>David Hunt</h3>
-                <h4>British Ambassador to Lithuania</h4>
+    <div id="patron-container" class="row">
+        <div class="grid_4">
+        <div class="speaker-card">
+            <div id="david-hunt" class="speaker-photo"></div>
+            <div class="speaker-info">
+                <h3 class="blue">David Hunt</h3>
+                <div class="speaker-title">British Ambassador to Lithuania</div>
             </div>
-            <div class="speaker">
-                <img src="static/images/sarah-cowley.jpg">
-                <h3>Sarah Cowley</h3>
-                <h4>British Ambassador to Latvia</h4>
+        </div></div>
+
+        <div class="grid_4">
+        <div class="speaker-card">
+            <div id="sarah-cowley" class="speaker-photo"></div>
+            <div class="speaker-info">
+                <h3 class="blue">Sarah Cowley</h3>
+                <div class="speaker-title">British Ambassador to Latvia</div>
             </div>
-            <div class="speaker">
-                <img src="static/images/chris-holtby-obe.jpg">
-                <h3>Chris Holtby OBE</h3>
-                <h4>British Ambassador to Estonia</h4>
+        </div></div>
+
+        <div class="grid_4">
+        <div class="speaker-card">
+            <div id="chris-holtby-obe" class="speaker-photo"></div>
+            <div class="speaker-info">
+                <h3 class="blue">Chris Holtby OBE</h3>
+                <div class="speaker-title">British Ambassador to Estonia</div>
             </div>
-        </div>
+        </div></div>
     </div>
 {% endblock %}

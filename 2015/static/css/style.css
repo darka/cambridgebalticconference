@@ -664,14 +664,26 @@ span.slidesjs-next {
     margin: 2em 9.8%;
 }
 
-.patron-container {
-    text-align: center;
+#patron-container {
     margin: 2em auto;
 }
 
-/* SPEAKERS */
+/** Speakers */
 #placekitten {
     background-image: url("http://placekitten.com/g/512/512");
+}
+
+/** Patrons */
+#david-hunt {
+    background-image: url("../images/david-hunt.jpg");
+}
+
+#sarah-cowley {
+    background-image: url("../images/sarah-cowley.jpg");
+}
+
+#chris-holtby-obe {
+    background-image: url("../images/chris-holtby-obe.jpg");
 }
 
 
