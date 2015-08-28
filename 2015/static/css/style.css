@@ -85,6 +85,7 @@ h1, h2, h3 {
 #subtitle {
     padding-top: 0.5em;
     font-size: 28pt;
+    line-height: 1;
 }
 
 #date {
@@ -315,7 +316,6 @@ h1, h2, h3 {
 
 #footer {
     width: 100%;
-    height: 40vh;
     background-color: #443F79;
     color: #ffffff;
 }
@@ -468,12 +468,9 @@ ul.schedule {
     line-height: 100%;
 }
 
-.speaker-info div h3 {
-    margin-bottom: 0.2em;
-}
-
 .speaker-info h3 {
-    margin: 0.4em 0;
+    margin: 0.3em 0;
+    color: #443F79;
 }
 
 .panel-description {
@@ -677,5 +674,10 @@ span.slidesjs-next {
 
     .subpage h1 {
         padding: 20px 0px;
+    }
+
+    #footer #contact ul {
+        margin-left: 0;
+        padding-left: 0;
     }
 }   
