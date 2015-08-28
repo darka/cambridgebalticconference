@@ -316,24 +316,36 @@ body {
     color: #ffffff;
 }
 
-#footer #contact {
+#footer #contact ul {
     list-style-type: none;
-    margin: 0;
-    padding: 2em 9.8%;
+    margin: 50px 0 20px 15px;
     font-size: 1.0em;
 }
 
-#footer #contact li {
+#footer #contact ul li {
     margin: 0.3em;
 }
 
-#footer #contact li img {
+#footer #contact ul li img {
     margin: -0.1em 1em;
 }
 
 #footer a,
 #footer a:visited {
-    color: #ffffff;
+    color: #FFFFFF;
+}
+
+#copyright {
+    color: #5D588D;
+}
+
+#copyright .copytext {
+    font-size: small;
+}
+
+#copyright a,
+#copyright a:visited {
+    color: #5D588D;
 }
 
 .schedule-divider {
@@ -559,34 +571,19 @@ a:visited {
     color: #443F79;
 }
 
-.soclist {
+.org-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.soclist li {
-    margin: 0;
+.org-list li {
+    margin-left: 15px;
     padding: 0;
 }
 
-#committeelist {
-    margin: 1em 9.8%;
-    padding: 0;
-    list-style-type: none;
-}
-
-#committeelist li {
-    padding-top: 0.75em;
-}
-
-h3.regnotice {
-    margin: 1em 0;
-    padding: 0 9.8%;
-}
-
-.margins {
-    margin: 0 9.8%;
+.org-list h3 {
+    margin: 0.5em 0;
 }
 
 p.notice {
