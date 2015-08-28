@@ -488,23 +488,6 @@ ul.schedule {
 
 }
 
-.speaker ul {
-    list-style-type: none;
-    margin: 0 5%;
-    padding: 0;
-    text-align: left;
-}
-
-.speaker ul li {
-    text-indent: -0.3em;
-}
-
-.speaker ul li:before {
-    content: "• ";
-    color: #443F79;
-}
-
-
 .soclogo {
     width: 15%;
     height: auto;
@@ -517,53 +500,37 @@ ul.schedule {
     height: auto;
 }
 
-.sponsorlogo {
-    width: 10%;
+#sponsors-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#partners-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-container div {
+    height: 150px;
+    font: 0/0 a; 
+}
+
+.logo-container div:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.logo-container div a {
+    display: inline-block;
+    width: 100%;
     height: auto;
-    margin: 2%;
     vertical-align: middle;
 }
 
-.narrowerlogo {
-    width: 7%;
-}
-
-.widelogo {
-    width: 15%;
-}
-
-.widerlogo {
-    width: 20%;
-}
-
-.widestlogo {
-    width: 25%;
-}
-
-.workshoplist {
-    text-align: justify;
-}
-
-.workshoplist span {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
-.workshoplist li+li {
-    padding-top: 1em;
-}
-
-#overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-
-    background-color: rgba(0, 0, 0, 0.9);
+.logo-container div a img {
+    width: 100%;
 }
 
 a,
