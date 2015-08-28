@@ -11,8 +11,8 @@ h1, h2, h3 {
     font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
-body {
-    /*overflow-y: scroll;*/
+#sb-site {
+    overflow-y: hidden;
 }
 
 .left {
@@ -22,6 +22,8 @@ body {
 .right {
     float: right;
 }
+
+
 
 /* Header rules */
 
@@ -42,7 +44,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1000;
-    background: url('../images/background-mq.jpg');
+    background: url('../images/background.jpg');
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,7 +188,9 @@ body {
 
 .subpage h1 {
     clear: both;
-    padding: 20px 0;
+    padding: 20px 20px;
+    margin: 0;
+    line-height: 1;
 }
 
 .subpage h1 a,
@@ -226,10 +230,10 @@ body {
     text-decoration: none;
 }
 
-#kings {
+#programme-picture {
     width: 100%;
     height: 70vh;
-    background-image: url('../images/kings-mq.jpg');
+    background-image: url('../images/programme-picture.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,7 +251,7 @@ body {
 #hall-picture {
     width: 100%;
     height: 30vh;
-    background-image: url('../images/dinner-mq.jpg');
+    background-image: url('../images/dinner.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -501,17 +505,18 @@ ul.schedule {
 }
 
 #sponsors-container {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
 #partners-container {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
 .logo-container div {
     height: 150px;
+    margin-top: 15px;
     font: 0/0 a; 
 }
 
@@ -525,12 +530,14 @@ ul.schedule {
 .logo-container div a {
     display: inline-block;
     width: 100%;
-    height: auto;
+    max-height: 100%;
     vertical-align: middle;
+    text-align: center;
 }
 
 .logo-container div a img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
 }
 
 a,
@@ -556,11 +563,9 @@ a:visited {
 p.notice {
     font-weight: bold;
     font-size: 1.5em;
-}
-
-p.sponsornotice {
-    font-weight: bold;
-    font-size: 1.25em;
+    color: #443F79;
+    font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+    margin: 1em 0;
 }
 
 .blue {
@@ -613,10 +618,6 @@ span.slidesjs-next {
     width: 100%;
 }
 
-#sponsors {
-    margin-bottom: 1em;
-}
-
 .maps-container {
     position: relative;
 }
@@ -667,5 +668,14 @@ span.slidesjs-next {
 
     .content-padding {
         padding: 0 16px;
+    }
+
+    .logo-container div a img {
+        max-width: 75%;
+        max-height: 150px;
+    }
+
+    .subpage h1 {
+        padding: 20px 0px;
     }
 }   
