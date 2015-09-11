@@ -1,49 +1,167 @@
-{% extends "_base.tmpl.html" %}
-
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
 {% block head %}
-    {{ super() }}
-    <style>
-        .year {
-            width: 50%;
-            height: 100vh;
-            float: left;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            text-align: center;
-        }
-        #year-2013 {
-            background-image: url('static/background-2013-desat.jpg');
-        }
-        #year-2014 {
-            background-image: url('2014/static/images/background-mq.jpg');
-        }
-        a.link {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 7vw;
-            font-weight: bold;
-            color: #ffffff;
-            text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
-            margin-top: 40vh;
-            text-decoration: none;
-            position: relative;
-            top: 30vh;
-        }
-        a.link:hover {
-            text-shadow: 0px 0px 5px #0076BD, 0px 0px 5px #0076BD;
-        }
-        span.subtitle {
-            font-size: 3vw;
-        }
-    </style>
-{% endblock %}
+  <title>Cambridge Baltic Conference</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Cambridge Baltic Conference 2015: Entrepreneurship and the Economy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:title" content="Cambridge Baltic Conference">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://cambridgebalticconference.eu/">
+  <meta property="og:description" content="Cambridge Baltic Conference 2015: Entrepreneurship and the Economy">
+  <meta property="og:image" content="http://cambridgebalticconference.eu/2015/static/images/top-logo.png">
 
-{% block allbody %}
-    <div id="year-2013" class="year">
-        <a class="link" href="2013/">CBC 2013<br><span class="subtitle">Baltic Countries and the EU</span></a>
-    </div>
-    <div id="year-2014" class="year">
-        <a class="link" href="2014/">CBC 2014<br><span class="subtitle">Innovation in Education</span></a>
-    </div>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="2015/static/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="2015/static/css/amazium.css">
+  <link rel="stylesheet" type="text/css" href="2015/static/css/style.css">
+
+  <script src="2015/static/js/modernizr-2.8.3.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="2015/static/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+  <link rel="apple-touch-icon" href="/favicon-152.png">
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+    <script src="/js/json3.min.js"></script>
+  <![endif]-->
+
+  <style>
+    /** Page grid */
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+
+    #current-conference {
+      height: 75vh; 
+      width: 100%;
+    }
+
+    #past-conferences {
+      height: 25vh;
+    }
+
+    /** Past conferences block */
+    .past-year {
+      width: 50%;
+      height: 25vh;
+      float: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: center;
+    }
+
+    .past-year a {
+      text-align: center;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #FFFFFF;
+      font-size: 24pt;
+      text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
+      text-decoration: none;
+      top: 9vh;
+      position: relative;
+    }
+
+    .past-year .subtitle {
+      font-size: 16pt;
+    }
+
+    #year-2013 {
+      background-image: url('static/background-2013-desat.jpg');
+    }
+
+    #year-2014 {
+      background-image: url('static/background-2014-desat.jpg');
+    }
+
+    /** Overrides for 2015 header (current conference) */
+    #header {
+      height: 75vh;
+    }
+
+    #title {    
+      font-size: 55pt;
+      line-height: 95%;
+    }
+
+    #subtitle {
+      padding-top: 0.4em;
+      font-size: 24pt;
+      line-height: 1;
+    }
+
+    #date {
+      padding-top: 0.6em;
+      font-size: 16pt;
+    }
+
+    #toplogo {
+      height: 75px;
+    }
+
+    #scroll-arrow {
+      background-color: #443F79;
+      bottom: 0;
+    }
+
+    .larger-font {
+      font-size: 1.4em;
+      padding: 10px 0;
+    }
+  </style>
 {% endblock %}
+</head>
+<body>
+  <div id="current-conference">
+    <a href="/2015/">
+      <!-- Structure from 2015's header -->
+      <div id="header">
+        <div id="background"></div>
+        <div id="banner" class="row">
+            <div class="grid_12" style="height: 5vh"></div>
+            <div class="grid_12"><div id="toplogo"></div></div>
+            <div class="grid_11 offset_1 left">
+                <div id="title">Cambridge<br/>Baltic<br/>Conference '15</div>
+                <div id="subtitle">Entrepreneurship and the Economy</div>
+                <div id="date">24 October 2015</div>
+            </div>
+        </div>
+        <div id="scroll-arrow"><div class="larger-font">Proceed to the website →</div></div>
+      </div>
+    </a>
+  </div>
+  <div id="past-conferences" class="clearfix">
+    <div id="year-2013" class="past-year">
+      <a class="link" href="/2013/">CBC 2013<br><span class="subtitle">Baltic Countries and the EU</span></a>
+    </div>
+    <div id="year-2014" class="past-year">
+      <a class="link" href="/2014/">CBC 2014<br><span class="subtitle">Innovation in Education</span></a>
+    </div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43855583-1', 'cambridgebalticconference.eu');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
 

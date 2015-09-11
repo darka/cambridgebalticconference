@@ -51,6 +51,7 @@ p.notice {
 
 /* Header rules */
 #header {
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
   width: 100%;
   height: 100vh;
   color: #DFFF00;
@@ -95,15 +96,13 @@ p.notice {
 }
 
 #banner {
-  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
-  max-width: 100
+  max-width: 100%;
 }
 
 #title {    
   font-size: 64pt;
   line-height: 95%;
 }
-
 
 #subtitle {
   padding-top: 0.5em;
