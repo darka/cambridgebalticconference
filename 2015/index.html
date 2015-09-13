@@ -6,9 +6,9 @@
 
 {% set nav = [
     ("#about", "About"),
+    ("#registration", "Tickets"),
     ("#programme", "Programme"),
     ("#speakers", "Speakers"),
-    ("#patrons", "Patrons"),
     ("#sponsors", "Sponsors"),
     ("#partners", "Partners &amp; Supporters"),
     ("#venues", "Venues"),
@@ -57,11 +57,10 @@
 {% block body %}
     {# {% include "_Feedback.html" %} #}
     {% include "_About.html" %}
-    {# {% include "_Registration.html" %} #}
-    {# {% include "_Cbc2014.html" %} #}
+    {% include "_Registration.html" %}
     {% include "_Programme.html" %}
     {% include "_Speakers.html" %}
-    {% include "_Patrons.html" %}
+    {# {% include "_Patrons.html" %} #}
     {% include "_Sponsors.html" %}
     {% include "_Partners.html" %}
     {% include "_Venues.html" %}

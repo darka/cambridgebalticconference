@@ -35,6 +35,13 @@ p.notice {
   margin: 1em 0;
 }
 
+p.small-notice {
+  font-size: 1em;
+  color: #443F79;
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 0.3em 0;
+}
+
 .blue {
   color: #443F79;
 }
@@ -248,6 +255,11 @@ p.notice {
 
 #view-more-pictures a {
   text-decoration: none;
+}
+
+/* Tickets & registration section */
+#ticket-container {
+  margin: 20px auto;
 }
 
 /* Venue section */
