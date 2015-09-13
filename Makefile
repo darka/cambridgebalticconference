@@ -1,4 +1,4 @@
-.PHONY: all cbc2013 cbc2014 cbc2015 root deploy deploy-dev dirs latest-dev-deploy
+.PHONY: all cbc2013 cbc2014 cbc2015 root deploy-live deploy-dev-el dirs latest-dev-deploy
 
 all: cbc2013 cbc2014 cbc2015 root
 	cp -rT out/root out/cbcdev
@@ -23,8 +23,8 @@ cbc2015:
 deploy-dev-au: all
 	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
 
-deploy: all
-	rsync -av out/cbcdev/ /societies/culs/public_html/cambridgebalticconference.eu
+deploy-live: all
+	rsync -av out/cbcdev/ el398@files.srcf.net:/societies/culs/public_html/cambridgebalticconference.eu
 
 deploy-dev-el: all
 	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
