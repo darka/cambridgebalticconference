@@ -1,23 +1,30 @@
 {% extends "base/_subpage.tmpl.html" %}
 
 {% block subpage_id %}feedback{% endblock %}
-{% block subpage_title %}Cambridge Baltic Conference 2014{% endblock %}
+{% block subpage_title %}Summary{% endblock %}
 
 {% block subpage_content %}
-    <div class="margins">
-        <script type="text/javascript"> 
-             var fblp_url = '//www.feedbackloop.com.au'; 
-             var fblp_code = 'cambridgebalticconference'; 
-             var fblp_service = 'CambridgeBalticConference'; 
-             (function() { 
-                 var fblp = document.createElement('script'); 
-                 fblp.type = 'text/javascript'; 
-                 fblp.async = true; 
-                 fblp.src = fblp_url + '/stat/widget/embed.js'; 
-                 document.getElementsByTagName('head')[0].appendChild(fblp); 
-             })(); 
-         </script> 
-         <div id="fblp_main"></div> 
-         <noscript>Please enable JavaScript to view the <a href="http://www.feedbackloop.com.au/testimonialspage/cambridgebalticconference/service/CambridgeBalticConference/?utm_source=feedbacklp&utm_medium=widget_cambridgebalticconference&utm_campaign=noscript" target='_blank'> social testimonials powered by Feedback Loop. </a></noscript>
+    <div class="row">
+        <p>
+            We'd like to say a big thank you to all of our speakers, sponsors, partners and, most importantly, you, dear attendees, for making this event successful, full of novel ideas and purposeful discussions, engaging, motivating and inspiring. Please fill in this short questionnaire to help us improve future conferences.
+        </p>
+        <div class="grid_8">
+            <iframe src="https://docs.google.com/forms/d/1BWKrqR8ut0eCIidq7kz0FNmPaY2-dYkPcQI_pqsdKr0/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <div class="grid_4">
+            <div class="grid_4">
+            <h2 class="blue">A few moments from CBC'15</h2>
+            <div id="photos-block">
+                <div class="clearfix"> 
+                    <div class="left"><img src="static/images/cover-0.jpg"></div>
+                    <div class="left"><img src="static/images/cover-1.jpg"></div>
+                </div>
+                <div id="view-more-pictures">
+                    <a href="https://www.dropbox.com/sh/zisn8h2pujlrc5p/AABSJAVZcWuAxrN7aN5poJ7Ha?dl=0" target="_blank">
+                      <h3 class="blue">View more via Dropbox →</h3></a>
+                </div>
+            </div>
+          </div>
+        </div>
     </div>
 {% endblock %}

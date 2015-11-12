@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% set nav = [
+    ("#feedback", "Feedback"),
     ("#about", "About"),
-    ("#registration", "Tickets"),
     ("#programme", "Programme"),
     ("#speakers", "Speakers"),
     ("#sponsors", "Sponsors"),
@@ -55,9 +55,9 @@
 {% endblock %}
 
 {% block body %}
-    {# {% include "_Feedback.html" %} #}
+    {% include "_Feedback.html" %} 
     {% include "_About.html" %}
-    {% include "_Registration.html" %}
+    {# {% include "_Registration.html" %} #}
     {% include "_Programme.html" %}
     {% include "_Speakers.html" %}
     {# {% include "_Patrons.html" %} #}
