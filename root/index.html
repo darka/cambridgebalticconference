@@ -56,7 +56,7 @@
 
     /** Past conferences block */
     .past-year {
-      width: 50%;
+      width: 33.33%;
       height: 25vh;
       float: left;
       background-size: cover;
@@ -88,6 +88,10 @@
       background-image: url('static/background-2014-desat.jpg');
     }
 
+    #year-2015 {
+      background-image: url('static/background-2015-desat.jpg');
+    }
+
     /** Overrides for 2015 header (current conference) */
     #header {
       height: 75vh;
@@ -114,7 +118,7 @@
     }
 
     #scroll-arrow {
-      background-color: #443F79;
+      background-color: #25475e;
       bottom: 0;
     }
 
@@ -122,27 +126,41 @@
       font-size: 1.4em;
       padding: 10px 0;
     }
+
+
+    #background {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1000;
+        background: url('static/main_background_2016_notext.jpg');
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
   </style>
 {% endblock %}
 </head>
 <body>
   <div id="current-conference">
-    <a href="/2015/">
-      <!-- Structure from 2015's header -->
+    <!-- <a href="/2015/"> -->
       <div id="header">
         <div id="background"></div>
         <div id="banner" class="row">
             <div class="grid_12" style="height: 5vh"></div>
             <div class="grid_12"><div id="toplogo"></div></div>
             <div class="grid_11 offset_1 left">
-                <div id="title">Cambridge<br/>Baltic<br/>Conference '15</div>
-                <div id="subtitle">Entrepreneurship and the Economy</div>
-                <div id="date">24 October 2015</div>
+                <div id="title">Cambridge<br/>Baltic<br/>Conference '16</div>
+                <div id="subtitle">Technology and Governance</div>
+                <div id="date">12 November 2016</div>
             </div>
         </div>
-        <div id="scroll-arrow"><div class="larger-font">Proceed to the website →</div></div>
+        <div id="scroll-arrow"><div class="larger-font"><!--Proceed to the website →-->More information coming soon</div></div>
       </div>
-    </a>
+    <!-- </a>-->
   </div>
   <div id="past-conferences" class="clearfix">
     <div id="year-2013" class="past-year">
@@ -150,6 +168,9 @@
     </div>
     <div id="year-2014" class="past-year">
       <a class="link" href="/2014/">CBC 2014<br><span class="subtitle">Innovation in Education</span></a>
+    </div>
+    <div id="year-2015" class="past-year">
+      <a class="link" href="/2015/">CBC 2015<br><span class="subtitle">Entrepreneurship and the Economy</span></a>
     </div>
   </div>
 

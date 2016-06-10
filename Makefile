@@ -1,6 +1,6 @@
 .PHONY: all cbc2013 cbc2014 cbc2015 root deploy-live deploy-dev-el dirs latest-dev-deploy
 
-all: cbc2013 cbc2014 cbc2015 root
+all: dirs cbc2013 cbc2014 cbc2015 root
 	cp -rT out/root out/cbcdev
 	cp -rT out/2015 out/cbcdev/2015
 	cp -rT out/2014 out/cbcdev/2014
@@ -20,14 +20,14 @@ cbc2014:
 cbc2015:
 	staticjinja build --srcpath=2015/ --outpath=out/2015/ --static=static
 
-deploy-dev-au: all
-	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
+#deploy-dev-au: all
+#	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
 
 deploy-live: all
-	rsync -av out/cbcdev/ el398@files.srcf.net:/societies/culs/public_html/cambridgebalticconference.eu
+	rsync -av out/cbcdev/ mr472@files.srcf.net:/societies/cbconf/public_html/
 
-deploy-dev-el: all
-	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
+#deploy-dev-el: all
+#	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
 
 dirs:
 	mkdir -p out/root/
@@ -35,7 +35,7 @@ dirs:
 	mkdir -p out/2014/
 	mkdir -p out/2015/
 
-latest-dev-deploy:
-	make cbc2015
-	cp -rT out/2015 out/cbcdev/2015
-	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
+#latest-dev-deploy:
+#	make cbc2015
+#	cp -rT out/2015 out/cbcdev/2015
+#	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
