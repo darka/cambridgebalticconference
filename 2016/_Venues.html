@@ -1,0 +1,45 @@
+{% extends "base/_subpage.tmpl.html" %}
+
+{% block subpage_id %}venues{% endblock %}
+{% block subpage_title %}Venues{% endblock %}
+
+{% block subpage_content %}
+<div id="venue-container" class="clearfix">
+  <div class="venue">
+    <div id="union-picture"></div>
+    <div class="content-padding">
+      <div class="venue-info-card clearfix">
+        <div class="venue-icon-castle"></div>
+        <div class="venue-info">
+          <div class="venue-purpose">Conference venue:</div>
+          <div class="venue-name">The Cambridge Union Society</div>
+          <div class="venue-address">9a Bridge Street, Cambridge, CB2 1UB</div>
+        </div>
+      </div>
+
+      <div class="maps-container">
+          <div class="maps-overlay" onClick="style.pointerEvents='none'"></div>
+          <iframe class="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Cambridge+Union+Society,+9A+Bridge+Street,+Cambridge,+United+Kingdom&amp;aq=0&amp;oq=Cambridge+Union+Society,+9a+Bridge&amp;sll=52.208238,0.119986&amp;sspn=0.001976,0.005252&amp;ie=UTF8&amp;hq=Cambridge+Union+Society,&amp;hnear=9A+Bridge+St,+Cambridge+CB2+1UA,+United+Kingdom&amp;t=m&amp;ll=52.210591,0.118768&amp;spn=0.004602,0.00912&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+      </div>
+    </div>
+
+  </div>
+  <div class="venue">
+    <div id="hall-picture"></div>
+    <div class="content-padding">
+      <div class="venue-info-card clearfix">
+        <div class="venue-icon-castle"></div>
+        <div class="venue-info">
+          <div class="venue-purpose">Dinner venue:</div>
+          <div class="venue-name">Christ's College</div>
+          <div class="venue-address">St Andrew's St, Cambridge CB2 3BU</div>
+        </div>
+      </div>
+      <div class="maps-container">
+          <div class="maps-overlay" onClick="style.pointerEvents='none'"></div>
+          <iframe class="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9780.179806949178!2d0.1224627!3d52.2062306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbeafa5797c3798cd!2sChrist&#39;s+College+Cambridge!5e0!3m2!1sen!2sus!4v1472574622704"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

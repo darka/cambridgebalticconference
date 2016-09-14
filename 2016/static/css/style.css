@@ -1,0 +1,771 @@
+/* General rules */
+html {
+  font-family: "Hind", "Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif; 
+  line-height: 140%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+#sb-site {
+  overflow-y: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+a,
+a:visited {
+  color: #25475E;
+}
+
+p.notice {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #25475E;
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 1em 0;
+}
+
+p.small-notice {
+  font-size: 1em;
+  color: #25475E;
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 0.3em 0;
+}
+
+.blue {
+  color: #25475E;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.centered,
+.subpage p.centered {
+  text-align: center;
+}
+
+
+/* Header rules */
+#header {
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+}
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1000;
+  background: url('../../../static/main_background_2016_notext.jpg');
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#scroll-arrow {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0.5em;
+}
+
+#scroll-arrow img {
+  width: 130px;
+}
+
+#toplogo {
+  position: relative;
+  background-image: url('../images/top-logo.png');
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+#banner {
+  max-width: 100%;
+}
+
+#title {    
+  font-size: 64pt;
+  line-height: 95%;
+}
+
+#subtitle {
+  padding-top: 0.5em;
+  font-size: 28pt;
+  line-height: 1;
+}
+
+#date {
+  padding-top: 0.8em;
+  font-size: 20pt;
+}
+
+/* Menu rules */
+#menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+#menu-content {
+  height: 50px;
+  background-color: #25475E;
+  color: #DFFF00;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: auto;
+}
+
+#menu ul li {
+  float: left;
+  height: 50px;
+  overflow: hidden;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 0.9em 0.8em;
+  text-decoration: none;
+  color: #FFFFFF;
+  /*height: 100%;*/
+}
+
+#menu ul li a:hover {
+  color: #25475E;
+  background-color: #FFFFFF;
+}
+
+.navicon-line {
+  width: 24px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.hamburger-wrapper {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.navicon {
+  position: absolute;
+  left: 13px;
+  top: 17px;
+}
+
+.navbar-right {
+  background-color: #25475E !important;
+}
+
+.navbar-right nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.navbar-right ul li a {
+  display: block;
+  padding: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar-right ul li a:hover {
+  color: #25475E;
+  background-color: #ffffff;
+}
+
+/* Subpage general rules */
+.subpage-header {
+  background-color: #25475E;
+  color: #ffffff;
+}
+
+.subpage h1 {
+  clear: both;
+  padding: 20px 20px;
+  margin: 0;
+  line-height: 1;
+}
+
+.subpage h1 a,
+.subpage h1 a:visited {
+  color: #ffffff;
+}
+
+.subpage p {
+  text-align: justify;
+}
+
+.subpage p+p {
+  margin-top: 1.5em;
+}
+
+.subpage > p:first-of-type {
+  margin-top: 2em;
+}
+
+.subpage > p:last-of-type {
+  margin-bottom: 2em;
+}
+
+/* About section */
+#photos-block img {
+  width: 100%;
+}
+
+#view-more-pictures h3 {
+  text-align: center;
+  margin-top: 0.1em;
+  margin-bottom: 1em;
+}
+
+#view-more-pictures a {
+  text-decoration: none;
+}
+
+/* Tickets & registration section */
+#ticket-container {
+  margin: 20px auto;
+}
+
+/* Venue section */
+#programme-picture {
+  width: 100%;
+  height: 70vh;
+  background-image: url('../images/programme-picture.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#union-picture {
+  width: 100%;
+  height: 30vh;
+  background-image: url('../images/venues/union-mq.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hall-picture {
+  width: 100%;
+  height: 30vh;
+  background-image: url('../images/venues/christs.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#venue-container {
+  margin: 0 0 10px 0;
+  padding: 0;
+  width: 100%;
+  background-color: #25475E;
+  color: #FFFFFF;
+}
+
+.venue {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.venue-info-card {
+  margin: 20px;
+}
+
+.venue-info {
+  float: left;
+}
+
+.venue-icon-castle {
+  width: 50px;
+  height: 50px;
+  margin: 9px 18px;
+  background-image: url('../icons/castle.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.venue-name {
+  margin: 0 0 0.15em 0;
+  font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 1.6em;
+}
+
+.venue-address {
+  font-style: italic;
+}
+
+.content-padding {
+  padding: 0 20px;
+}
+
+.googlemap {
+  width: 100%;
+  height: 350px;
+}
+
+.maps-container {
+  position: relative;
+}
+
+.maps-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  background-color: #25475E;
+  color: #ffffff;
+}
+
+#footer #contact ul {
+  list-style-type: none;
+  margin: 50px 0 20px 15px;
+  font-size: 1.0em;
+}
+
+#footer #contact ul li {
+  margin: 0.3em;
+}
+
+#footer #contact ul li img {
+  margin: -0.1em 1em;
+}
+
+#footer a,
+#footer a:visited {
+  color: #FFFFFF;
+}
+
+#copyright {
+  color: #5D588D;
+}
+
+#copyright .copytext {
+  font-size: small;
+}
+
+#copyright a,
+#copyright a:visited {
+  color: #5D588D;
+}
+
+/* Schedule section */
+.schedule-divider {
+  border-bottom: 1px solid #25475E;
+}
+
+.schedule-row {
+  margin-top: 13px !important;
+}
+
+.schedule-row:last-child {
+  margin-bottom: 20px !important;
+}
+
+.schedule-description p {
+  margin: 0;
+  padding: 0;
+}
+
+ul.schedule {
+  list-style-type: none;
+  display: table-cell;
+  padding: 0;
+}
+
+.schedule small {
+  font-style: italic;
+}
+
+.schedule sup {
+  z-index: -1;
+}
+
+.schedule li {
+  padding-bottom: 0.7em;
+}
+
+.schedule li:last-child {
+  padding-bottom: 0;
+}
+
+.schedule li span:first-of-type {
+  color: #25475E;
+  font-weight: bold;
+  font-size: 125%;
+  float: left;
+  width: 130px;
+}
+
+.schedule .talktitle {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.schedule-day {
+  color: #25475E;
+  margin: 1em 0 0.5em 0;
+}
+
+.schedule-section {
+  color: #25475E;
+  font-size: 1em;
+  margin: 1em 0 0 0;
+}
+
+.schedule-divider {
+  margin-top: 1em;
+}
+
+.schedule-divider hr {
+  margin: 0 0 0.5em 0;
+}
+
+/* Speakers' section */
+.speaker-panel:last-child {
+  margin-bottom: 20px !important;
+}
+
+.speaker-card {
+  max-width: 260px;
+}
+
+.speaker-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.speaker-info {
+  line-height: 100%;
+}
+
+.speaker-info h3 {
+  margin: 0.3em 0;
+  color: #25475E;
+}
+
+.speaker-info .speaker-role {
+  font-style: italic;
+  font-size: small;
+}
+
+.speaker-info .speaker-title {
+
+}
+
+/* Sponsors and Parters sections */
+.soclogo {
+  width: 15%;
+  height: auto;
+  margin: 1em 2em;
+  vertical-align: middle;
+}
+
+.latvians {
+  width: 10%;
+  height: auto;
+}
+
+#sponsors-container {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#partners-container {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.logo-container div {
+  height: 150px;
+  margin-top: 15px;
+  font: 0/0 a; 
+}
+
+.logo-container div:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.logo-container div a {
+  display: inline-block;
+  width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo-container div a img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.org-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.org-list li {
+  margin-left: 15px;
+  padding: 0;
+}
+
+.org-list h3 {
+  margin: 0.5em 0;
+}
+
+/* Patrons' section */
+#patron-container {
+  margin: 2em auto;
+}
+
+/** Speakers */
+
+div.speaker-photo#unknown {
+  background-image: url("../images/speakers/unknown.png");
+}
+
+div.speaker-photo#tanel-ross {
+  background-image: url("../images/speakers/tanel-ross.png");
+}
+
+div.speaker-photo#andres-metspalu {
+  background-image: url("../images/speakers/andres-metspalu.png");
+}
+
+div.speaker-photo#meelis-atonen {
+  background-image: url("../images/speakers/meelis-atonen.jpg");
+}
+
+div.speaker-photo#yrjo-ojasaar {
+  background-image: url("../images/speakers/yrjo-ojasaar.png");
+}
+
+div.speaker-photo#priit-poldoja {
+  background-image: url("../images/speakers/priit-poldoja.jpg");
+}
+
+div.speaker-photo#norris-koppel {
+  background-image: url("../images/speakers/norris-koppel.jpg");
+}
+
+div.speaker-photo#andres-kitter {
+  background-image: url("../images/speakers/andres-kitter.jpg");
+}
+
+div.speaker-photo#kaspar-korjus {
+  background-image: url("../images/speakers/kaspar-korjus.jpg");
+}
+
+div.speaker-photo#ignas-rubikas {
+  background-image: url("../images/speakers/ignas-rubikas.jpg");
+}
+
+div.speaker-photo#james-oates {
+  background-image: url("../images/speakers/james-oates.jpg");
+}
+
+div.speaker-photo#andrius-francas {
+  background-image: url("../images/speakers/andrius-francas.jpg");
+}
+
+div.speaker-photo#kotryna-stankute {
+  background-image: url("../images/speakers/kotryna-stankute.jpg");
+}
+
+div.speaker-photo#tadas-jucikas {
+  background-image: url("../images/speakers/tadas-jucikas.jpg");
+}
+
+div.speaker-photo#andrius-aucinas {
+  background-image: url("../images/speakers/andrius-aucinas.jpg");
+}
+
+div.speaker-photo#rokas-grajauskas {
+  background-image: url("../images/speakers/rokas-grajauskas.jpg");
+}
+
+div.speaker-photo#ugne-ritchik {
+  background-image: url("../images/speakers/ugne-ritchik.jpg");
+}
+
+div.speaker-photo#ain-aaviksoo {
+  background-image: url("../images/speakers/ain-aaviksoo.jpg");
+}
+
+div.speaker-photo#piret-potisepp {
+  background-image: url("../images/speakers/piret-potisepp.jpg");
+}
+
+div.speaker-photo#mantas-katinas {
+  background-image: url("../images/speakers/mantas-katinas.jpg");
+}
+
+div.speaker-photo#ernests-jenavs {
+  background-image: url("../images/speakers/ernests-jenavs.jpg");
+}
+
+div.speaker-photo#peteris-zilgalvis {
+  background-image: url("../images/speakers/peteris-zilgalvis.jpg");
+}
+
+
+/** Past conferences block */
+/*.past-year {*/
+/*  width: 33.333333%;*/
+/*  height: 25vh;*/
+/*  float: left;*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center center;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.past-year a {*/
+/*  text-align: center;*/
+/*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*  color: #FFFFFF;*/
+/*  font-size: 24pt;*/
+/*  text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;*/
+/*  text-decoration: none;*/
+/*  top: 9vh;*/
+/*  position: relative;*/
+/*}*/
+
+
+
+.past-year a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height:200px;
+/*    padding-top: 80%;*/
+    display: block;
+    margin:10px 0;
+    text-decoration: none;
+}
+
+.past-year div.text{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 24pt;
+    text-shadow: 0px 0px 5px #000, 0px 0px 5px #000;
+    top: 40%;
+    position: relative;
+}
+
+.past-year a .subtitle {
+  font-size: 14pt;
+}
+
+#year-2013 {
+  background-image: url('../images/previous-years/background-2013-desat.jpg');
+}
+
+#year-2014 {
+  background-image: url('../images/previous-years/background-2014-desat.jpg');
+}
+
+#year-2015 {
+  background-image: url('../images/previous-years/background-2015-desat.jpg');
+}
+
+
+
+
+
+
+
+
+
+/** Patrons */
+/*#david-hunt {*/
+/*  background-image: url("../images/david-hunt.jpg");*/
+/*}*/
+
+/*#sarah-cowley {*/
+/*  background-image: url("../images/sarah-cowley.jpg");*/
+/*}*/
+
+/*#chris-holtby-obe {*/
+/*  background-image: url("../images/chris-holtby-obe.jpg");*/
+/*}*/
+
+/* MOBILE ONLY STYLES */
+@media only screen and (max-width: 767px) {
+  #title {    
+    font-size: 15vw;
+  }
+
+  .venue {
+    width: 100%;
+  }
+
+  .content-padding {
+    padding: 0 16px;
+  }
+
+  .logo-container div a img {
+    max-width: 75%;
+    max-height: 150px;
+  }
+
+  .subpage h1 {
+    padding: 20px 0px;
+  }
+
+  #footer #contact ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}   

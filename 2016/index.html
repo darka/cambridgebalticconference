@@ -1,0 +1,68 @@
+{% extends "base/_year_base.tmpl.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% set nav = [
+    ("#about", "About"),
+    ("#programme", "Programme"),
+    ("#speakers", "Speakers"),
+    ("#sponsors", "Sponsors"),
+    ("#partners", "Partners &amp; Supporters"),
+    ("#venues", "Venues"),
+    ("#previous_years", "Previous Years"),
+    ("#organisers", "Organisers"),
+    ("#contact", "Contact"),
+] %}
+
+{% block bodyscript %}
+    {{ super() }}
+{% endblock %}
+
+{% block header %}
+    <div id="background"></div>
+    <div id="banner" class="row">
+        <div class="grid_12" style="height: 12vh"></div>
+        <div class="grid_12"><div id="toplogo"></div></div>
+        <div class="grid_11 offset_1 left">
+            <div id="title">Cambridge<br/>Baltic<br/>Conference '16</div>
+            <div id="subtitle">Technology and Governance</div>
+            <div id="date">12 November 2016</div>
+        </div>
+    </div>
+    <div id="scroll-arrow"><img src="static/icons/scroll-arrow.png" /></div>
+{% endblock %}
+
+{% block footer %}
+    <div id="contact" class="row">
+        <ul>
+        <li><a href="mailto:CambridgeBalticConference@gmail.com">
+            <img src="static/icons/email.png"><span>CambridgeBalticConference@gmail.com</span>
+        </a></li>
+        <li><a href="https://www.facebook.com/CamBalticConf">
+            <img src="static/icons/facebook.png"><span>fb.me/CamBalticConf</span>
+        </a></li>
+        <li><a href="https://twitter.com/CamBalticConf">
+            <img src="static/icons/twitter.png"><span>@CamBalticConf</span>
+        </a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="row">
+        <p>&copy; Cambridge Baltic Conference, 2016.</p>
+        <p class="copytext">Some materials use Cambridge University logo, Coat of Arms, or other branding, all rights reserved and belong to Cambridge University. Design materials and the website use icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {% include "_About.html" %}
+    {# {% include "_Registration.html" %} #}
+    {% include "_Programme.html" %}
+    {% include "_Speakers.html" %}
+    {# {% include "_Patrons.html" %} #}
+    {% include "_Sponsors.html" %}
+    {% include "_Partners.html" %}
+    {% include "_Venues.html" %}
+    {% include "_PreviousYears.html" %}
+    {% include "_Organisers.html" %}
+{% endblock %}
