@@ -392,6 +392,8 @@ p.small-notice {
 }
 
 /* Schedule section */
+
+
 .schedule-divider {
   border-bottom: 1px solid #25475E;
 }
@@ -462,6 +464,8 @@ ul.schedule {
 .schedule-divider hr {
   margin: 0 0 0.5em 0;
 }
+
+
 
 /* Speakers' section */
 .speaker-panel:last-child {
@@ -657,6 +661,9 @@ div.speaker-photo#peteris-zilgalvis {
   background-image: url("../images/speakers/peteris-zilgalvis.jpg");
 }
 
+div.speaker-photo#paula-kink {
+  background-image: url("../images/speakers/paula-kink.jpg");
+}
 
 /** Past conferences block */
 /*.past-year {*/
