@@ -7,9 +7,9 @@
 {% set nav = [
     ("#about", "About"),
     ("#programme", "Programme"),
+    ("#tickets", "Tickets"),
     ("#speakers", "Speakers"),
-    ("#sponsors", "Sponsors"),
-    ("#partners", "Partners &amp; Supporters"),
+    ("#main_sponsor", "Sponsors &amp; Supporters"),
     ("#venues", "Venues"),
     ("#previous_years", "Previous Years"),
     ("#organisers", "Organisers"),
@@ -26,8 +26,8 @@
         <div class="grid_12" style="height: 12vh"></div>
         <div class="grid_12"><div id="toplogo"></div></div>
         <div class="grid_11 offset_1 left">
-            <div id="title">Cambridge<br/>Baltic<br/>Conference '16</div>
-            <div id="subtitle">Technology and Governance</div>
+            <div id="title">Technology<br/>and<br/>Governance</div>
+            <div id="subtitle">Cambridge Baltic Conference '16</div>
             <div id="date">12 November 2016</div>
         </div>
     </div>
@@ -58,8 +58,10 @@
     {% include "_About.html" %}
     {# {% include "_Registration.html" %} #}
     {% include "_Programme.html" %}
+    {% include "_Tickets.html" %}
     {% include "_Speakers.html" %}
     {# {% include "_Patrons.html" %} #}
+    {% include "_MainSponsor.html" %}
     {% include "_Sponsors.html" %}
     {% include "_Partners.html" %}
     {% include "_Venues.html" %}

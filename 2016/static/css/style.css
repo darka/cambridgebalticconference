@@ -417,6 +417,11 @@ ul.schedule {
   padding: 0;
 }
 
+ul.schedule li.highlight{
+    font-weight:bold;
+  color: #25475E;
+}
+
 .schedule small {
   font-style: italic;
 }
@@ -434,8 +439,10 @@ ul.schedule {
 }
 
 .schedule li span:first-of-type {
-  color: #25475E;
-  font-weight: bold;
+/*  color: #25475E;*/
+  color:black;
+/*  font-weight: bold;*/
+font-weight:normal;
   font-size: 125%;
   float: left;
   width: 130px;
@@ -664,6 +671,64 @@ div.speaker-photo#peteris-zilgalvis {
 div.speaker-photo#paula-kink {
   background-image: url("../images/speakers/paula-kink.jpg");
 }
+
+div.speaker-photo#marko-kairjak {
+  background-image: url("../images/speakers/marko-kairjak.jpg");
+}
+
+div.speaker-photo#chris-leiter {
+  background-image: url("../images/speakers/chris-leiter.jpg");
+}
+
+div.speaker-photo#marius-jurgilas {
+  background-image: url("../images/speakers/marius-jurgilas.png");
+}
+
+div.speaker-photo#daumantas-dvilinskas {
+  background-image: url("../images/speakers/daumantas-dvilinskas.jpg");
+}
+
+div.speaker-photo#mindaugas-glodas {
+  background-image: url("../images/speakers/mindaugas-glodas.jpg");
+}
+
+div.speaker-photo#keith-willcock {
+  background-image: url("../images/speakers/keith-willcock.jpg");
+}
+
+div.speaker-photo#adam-beaumont {
+  background-image: url("../images/speakers/adam-beaumont.png");
+}
+
+div.speaker-photo#theresa-bubbear {
+  background-image: url("../images/speakers/theresa-bubbear.png");
+}
+
+div.speaker-photo#daniel-mariussen {
+  background-image: url("../images/speakers/daniel-mariussen.jpg");
+}
+
+div.speaker-photo#ray-larson {
+  background-image: url("../images/speakers/ray-larson.jpg");
+}
+
+div.speaker-photo#tom-grant {
+  background-image: url("../images/speakers/tom-grant.jpg");
+}
+
+div.speaker-photo#ekaterina-kochmar {
+  background-image: url("../images/speakers/ekaterina-kochmar.jpg");
+}
+
+div.speaker-photo#tobias-stone {
+  background-image: url("../images/speakers/tobias-stone.jpg");
+}
+
+div.speaker-photo#vita-liberte {
+  background-image: url("../images/speakers/vita-liberte.jpg");
+}
+
+
 
 /** Past conferences block */
 /*.past-year {*/
