@@ -28,10 +28,7 @@ cbc2016:
 #	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
 
 deploy-live: all
-	rsync -av out/cbcdev/ mr472@files.srcf.net:/societies/cbconf/public_html/
-
-#deploy-dev-el: all
-#	rsync -av out/cbcdev/ el398@files.srcf.net:~/public_html/dev
+	ncftpput -z -R kokosas . out/cbcdev/*
 
 deploy-dev: all
 	rsync -av out/cbcdev/ mr472@files.srcf.net:/societies/cbconf/public_html/dev/
