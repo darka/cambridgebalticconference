@@ -5,3 +5,5 @@ dist
 *.py[co]
 *.swp
 out
+tmp
+.DS_Store
