@@ -417,16 +417,16 @@ h1 {
 }
 
 #copyright {
-  color: #5D588D;
+  color: #fff;
 }
 
 #copyright .copytext {
-  font-size: small;
+  font-size: 0.75em;
 }
 
 #copyright a,
 #copyright a:visited {
-  color: #5D588D;
+  color: #fff;
 }
 
 /* Schedule section */
