@@ -330,7 +330,7 @@ h1 {
 }
 
 #venue-container {
-  margin: 0 0 10px 0;
+  margin-bottom: 0;
   padding: 0;
   width: 100%;
   background-color: #4e6088;
@@ -340,7 +340,6 @@ h1 {
 .venue {
   width: 50%;
   float: left;
-  margin-bottom: 20px;
 }
 
 .venue-info-card {
