@@ -6,7 +6,6 @@
 
 {% set nav = [
     ("#about", "About"),
-    ("#speakers", "Speakers"),
     ("#programme", "Programme"),
     ("#venues", "Venues"),
     ("#previous_years", "Previous Years"),
@@ -14,6 +13,7 @@
     ("#contact", "Contact"),
 ] %}
 
+{#    ("#speakers", "Speakers"), #}
 {#    ("#tickets", "Tickets"), #}
 {#    ("#main_sponsor", "Sponsors &amp; Supporters"), #}
 {% block bodyscript %}
@@ -62,7 +62,7 @@
     {% include "_About.html" %}
     {# {% include "_Registration.html" %} #}
     {# {% include "_Tickets.html" %} #}
-    {% include "_Speakers.html" %}
+    {#{% include "_Speakers.html" %}#}
     {% include "_Programme.html" %}
     {# {% include "_Patrons.html" %} #}
     {# {% include "_MainSponsor.html" %} #}
