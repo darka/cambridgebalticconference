@@ -1,7 +1,8 @@
 .PHONY: all cbc2013 cbc2014 cbc2015 cbc2016 root deploy-live deploy-dev-el dirs latest-dev-deploy
 
-all: dirs cbc2013 cbc2014 cbc2015 cbc2016 root
+all: dirs cbc2013 cbc2014 cbc2015 cbc2016 cbc2017 root
 	cp -rT out/root out/cbcdev
+	cp -rT out/2017 out/cbcdev/2017
 	cp -rT out/2016 out/cbcdev/2016
 	cp -rT out/2015 out/cbcdev/2015
 	cp -rT out/2014 out/cbcdev/2014
@@ -24,6 +25,8 @@ cbc2015:
 cbc2016:
 	staticjinja build --srcpath=2016/ --outpath=out/2016/ --static=static
 
+cbc2017:
+	staticjinja build --srcpath=2017/ --outpath=out/2017/ --static=static
 #deploy-dev-au: all
 #	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
 
