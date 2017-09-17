@@ -514,7 +514,7 @@ font-weight:normal;
 	float: left;
 	width: 200px;
 	height: 200px;
-	margin-right: 1em;
+	margin: 0 1em 1em 0;
 }
 .speaker-panel:last-child {
   margin-bottom: 20px !important;
@@ -536,11 +536,11 @@ font-weight:normal;
   line-height: 100%;
   margin-top: auto;
   margin-bottom: auto;
+  display: inline-block;
 }
 
-.speaker-info h3 {
-  margin: 0.3em 0;
-  color: #4e6088;
+.speaker-info h2 {
+  margin: 0;
 }
 
 .speaker-info .speaker-role {
