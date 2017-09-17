@@ -10,6 +10,10 @@ h1, h2, h3 {
   font-family: 'Montserrat', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
+video {
+	width: 100%;
+}
+
 #sb-site {
   overflow-y: hidden;
 }
@@ -945,4 +949,11 @@ div.speaker-photo#vita-liberte {
     margin-left: 0;
     padding-left: 0;
   }
-}   
+}
+
+@media only screen and (max-width: 1000px) {
+  video {
+	width: 1200px;
+    height: 800px;
+  }
+}
