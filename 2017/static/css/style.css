@@ -469,6 +469,7 @@ ul.schedule li.highlight{
 
 .schedule li {
   padding-bottom: 0.7em;
+  margin: 0.8em;
 }
 
 .schedule li:last-child {
@@ -498,12 +499,13 @@ font-weight:normal;
 .schedule-section {
   color: #4e6088;
   font-size: 1em;
-  margin: 1em 0 0 0;
+  margin: 0.8em;
 }
 
 .schedule-divider {
   margin-top: 1em;
   margin-bottom: 1em;
+  background-color: #eeeeee;
 }
 
 
