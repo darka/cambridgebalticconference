@@ -918,7 +918,7 @@ div.speaker-photo#vita-liberte {
 /* MOBILE ONLY STYLES */
 @media only screen and (max-width: 767px) {
   #title {    
-    font-size: 15vw;
+    font-size: 28pt;
   }
 
   .venue {
