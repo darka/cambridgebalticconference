@@ -9,14 +9,13 @@
     ("#speakers", "Speakers"),
     ("#programme", "Programme"),
     ("#sponsors", "Sponsors"),
+    ("#partners", "Partners"),
     ("#venues", "Venues"),
     ("#previous_years", "Previous Years"),
     ("#organisers", "Organisers"),
     ("#contact", "Contact"),
 ] %}
 
-{#    ("#partners", "Partners"), #}
-{#    ("#speakers", "Speakers"), #}
 {#    ("#tickets", "Tickets"), #}
 {#    ("#main_sponsor", "Sponsors &amp; Supporters"), #}
 {% block bodyscript %}
@@ -69,7 +68,7 @@
     {# {% include "_Patrons.html" %} #}
     {# {% include "_MainSponsor.html" %} #}
     {% include "_Sponsors.html" %}
-    {# {% include "_Partners.html" %} #}
+    {% include "_Partners.html" %}
     {% include "_Venues.html" %}
     {% include "_PreviousYears.html" %}
     {% include "_Organisers.html" %}
