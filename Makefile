@@ -30,6 +30,12 @@ cbc2017:
 #deploy-dev-au: all
 #	rsync -av out/cbcdev/ uranium@emerald.antanas.org:/home/uranium/cbcdev
 
+deploy-2017: all
+	ncftpput -z -R kokosas 2017/ out/cbcdev/2017/*.html
+#	ncftpput -z kokosas 2017/static/images/speakers/ out/cbcdev/2017/static/images/speakers/*
+#	ncftpput -z kokosas 2017a/ out/cbcdev/2017a/*.html
+#	ncftpput -z kokosas 2017/static/css/ out/cbcdev/2017/static/css/*
+
 deploy-root: all
 	ncftpput -z -R kokosas static/ out/cbcdev/static/*
 	ncftpput -z kokosas . out/cbcdev/*
