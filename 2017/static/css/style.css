@@ -530,6 +530,10 @@ font-weight:normal;
   max-width: 260px;
 }
 
+.speaker-description {
+	margin: 10px 0 0 0;
+}
+
 .speaker-photo {
   background-size: cover;
   background-repeat: no-repeat;
