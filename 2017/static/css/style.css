@@ -517,10 +517,13 @@ font-weight:normal;
 /* Speakers' section */
 
 .img--left {
-	float: left;
-	width: 200px;
-	margin: 0 1em 1em 0;
-	display: block;
+  width: 200px;
+  height: 100%;
+  display: block;
+  float: left;
+  width: 200px;
+  margin: 0 0.8em 0.8em 0;
+  clear: left;
 }
 .speaker-panel:last-child {
   margin-bottom: 20px !important;
@@ -532,38 +535,23 @@ font-weight:normal;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   min-height: 200px;
+  clear: left;
 }
 
 .speaker-description {
 	margin: 10px 0 20px 0;
 }
 
-.speaker-photo {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  padding-top: 100%;
-}
-
 .speaker-info {
-  line-height: 100%;
   margin-top: auto;
   margin-bottom: auto;
-  display: inline-block;
+  overflow: hidden;
 }
 
 .speaker-info h2 {
   margin: 0;
-}
-
-.speaker-info .speaker-role {
-  font-style: italic;
-  font-size: small;
-}
-
-.speaker-info .speaker-title {
-
+  display: inline-block;
+  line-height: 100%;
 }
 
 /* Sponsors and Parters sections */
@@ -635,158 +623,6 @@ font-weight:normal;
 #patron-container {
   margin: 2em auto;
 }
-
-/** Speakers */
-
-div.speaker-photo#unknown {
-  background-image: url("../images/speakers/unknown.png");
-}
-
-div.speaker-photo#tanel-ross {
-  background-image: url("../images/speakers/tanel-ross.png");
-}
-
-div.speaker-photo#andres-metspalu {
-  background-image: url("../images/speakers/andres-metspalu.png");
-}
-
-div.speaker-photo#meelis-atonen {
-  background-image: url("../images/speakers/meelis-atonen.jpg");
-}
-
-div.speaker-photo#yrjo-ojasaar {
-  background-image: url("../images/speakers/yrjo-ojasaar.png");
-}
-
-div.speaker-photo#priit-poldoja {
-  background-image: url("../images/speakers/priit-poldoja.jpg");
-}
-
-div.speaker-photo#norris-koppel {
-  background-image: url("../images/speakers/norris-koppel.jpg");
-}
-
-div.speaker-photo#andres-kitter {
-  background-image: url("../images/speakers/andres-kitter.jpg");
-}
-
-div.speaker-photo#kaspar-korjus {
-  background-image: url("../images/speakers/kaspar-korjus.jpg");
-}
-
-div.speaker-photo#ignas-rubikas {
-  background-image: url("../images/speakers/ignas-rubikas.jpg");
-}
-
-div.speaker-photo#james-oates {
-  background-image: url("../images/speakers/james-oates.jpg");
-}
-
-div.speaker-photo#andrius-francas {
-  background-image: url("../images/speakers/andrius-francas.jpg");
-}
-
-div.speaker-photo#kotryna-stankute {
-  background-image: url("../images/speakers/kotryna-stankute.jpg");
-}
-
-div.speaker-photo#tadas-jucikas {
-  background-image: url("../images/speakers/tadas-jucikas.jpg");
-}
-
-div.speaker-photo#andrius-aucinas {
-  background-image: url("../images/speakers/andrius-aucinas.jpg");
-}
-
-div.speaker-photo#rokas-grajauskas {
-  background-image: url("../images/speakers/rokas-grajauskas.jpg");
-}
-
-div.speaker-photo#ugne-ritchik {
-  background-image: url("../images/speakers/ugne-ritchik.jpg");
-}
-
-div.speaker-photo#ain-aaviksoo {
-  background-image: url("../images/speakers/ain-aaviksoo.jpg");
-}
-
-div.speaker-photo#piret-potisepp {
-  background-image: url("../images/speakers/piret-potisepp.jpg");
-}
-
-div.speaker-photo#mantas-katinas {
-  background-image: url("../images/speakers/mantas-katinas.jpg");
-}
-
-div.speaker-photo#ernests-jenavs {
-  background-image: url("../images/speakers/ernests-jenavs.jpg");
-}
-
-div.speaker-photo#peteris-zilgalvis {
-  background-image: url("../images/speakers/peteris-zilgalvis.jpg");
-}
-
-div.speaker-photo#paula-kink {
-  background-image: url("../images/speakers/paula-kink.jpg");
-}
-
-div.speaker-photo#marko-kairjak {
-  background-image: url("../images/speakers/marko-kairjak.jpg");
-}
-
-div.speaker-photo#chris-leiter {
-  background-image: url("../images/speakers/chris-leiter.jpg");
-}
-
-div.speaker-photo#marius-jurgilas {
-  background-image: url("../images/speakers/marius-jurgilas.png");
-}
-
-div.speaker-photo#daumantas-dvilinskas {
-  background-image: url("../images/speakers/daumantas-dvilinskas.jpg");
-}
-
-div.speaker-photo#mindaugas-glodas {
-  background-image: url("../images/speakers/mindaugas-glodas.jpg");
-}
-
-div.speaker-photo#keith-willcock {
-  background-image: url("../images/speakers/keith-willcock.jpg");
-}
-
-div.speaker-photo#adam-beaumont {
-  background-image: url("../images/speakers/adam-beaumont.png");
-}
-
-div.speaker-photo#theresa-bubbear {
-  background-image: url("../images/speakers/theresa-bubbear.png");
-}
-
-div.speaker-photo#daniel-mariussen {
-  background-image: url("../images/speakers/daniel-mariussen.jpg");
-}
-
-div.speaker-photo#ray-larson {
-  background-image: url("../images/speakers/ray-larson.jpg");
-}
-
-div.speaker-photo#tom-grant {
-  background-image: url("../images/speakers/tom-grant.jpg");
-}
-
-div.speaker-photo#ekaterina-kochmar {
-  background-image: url("../images/speakers/ekaterina-kochmar.jpg");
-}
-
-div.speaker-photo#tobias-stone {
-  background-image: url("../images/speakers/tobias-stone.jpg");
-}
-
-div.speaker-photo#vita-liberte {
-  background-image: url("../images/speakers/vita-liberte.jpg");
-}
-
-
 
 /** Past conferences block */
 /*.past-year {*/
@@ -956,6 +792,10 @@ div.speaker-photo#vita-liberte {
   #footer #contact ul {
     margin-left: 0;
     padding-left: 0;
+  }
+
+  .speaker-info {
+    overflow: visible;
   }
 }
 
