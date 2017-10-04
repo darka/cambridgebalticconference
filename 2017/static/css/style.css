@@ -520,13 +520,18 @@ font-weight:normal;
 	float: left;
 	width: 200px;
 	margin: 0 1em 1em 0;
+	display: block;
 }
 .speaker-panel:last-child {
   margin-bottom: 20px !important;
 }
 
 .speaker-card {
-  max-width: 260px;
+  background: #f1f1f1;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  min-height: 200px;
 }
 
 .speaker-description {
