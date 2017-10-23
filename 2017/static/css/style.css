@@ -584,6 +584,10 @@ font-weight:normal;
   height: auto;
 }
 
+#main-sponsor {
+  max-height: 80px;
+}
+
 #sponsors-container {
   margin-top: 5px;
   margin-bottom: 20px;
